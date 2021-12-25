@@ -1,20 +1,19 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Untitled](README.md)
+* [App List](app-list.md)
 
 ## Available Tools <a href="#bypasses" id="bypasses"></a>
 
-* [libhooker-configurator](bypasses/libhooker-configurator.md)
-* [Choicy](bypasses/choicy.md)
-* [A-Bypass](bypasses/a-bypass.md)
-* [Hestia](bypasses/hestia.md)
-* [HideJB](bypasses/hidejb.md)
-* [Shadow](bypasses/shadow.md)
-* [Kernel Based](bypasses/kernel-based/README.md)
-  * [vnodebypass](bypasses/kernel-based/vnodebypass.md)
-  * [KernBypass](bypasses/kernel-based/kernbypass.md)
-* [Untitled](bypasses/untitled.md)
-
-***
-
-* [App List](app-list.md)
+* [Non-Bypasses](bypasses/non-bypasses/README.md)
+  * [Choicy](bypasses/non-bypasses/choicy.md)
+  * [libhooker-configurator](bypasses/non-bypasses/libhooker-configurator.md)
+* [Kernel Level](bypasses/kernel-level/README.md)
+  * [vnodebypass](bypasses/kernel-level/vnodebypass.md)
+  * [KernBypass](bypasses/kernel-level/kernbypass.md)
+* [Tweaks](bypasses/tweaks/README.md)
+  * [A-Bypass](bypasses/tweaks/a-bypass.md)
+  * [Hestia](bypasses/tweaks/hestia.md)
+  * [HideJB](bypasses/tweaks/hidejb.md)
+  * [Liberty Lite](bypasses/tweaks/liberty-lite.md)
+  * [Shadow](bypasses/tweaks/shadow.md)

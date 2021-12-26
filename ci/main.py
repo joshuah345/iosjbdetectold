@@ -17,14 +17,14 @@ with open(bypasses_file) as file:
 table_matrix = list()
 apps_files = [os.path.join(apps_dir, f) for f in os.listdir(apps_dir) if os.path.isfile(os.path.join(apps_dir, f))]
 for app_file in apps_files:
-    with open(app_file) as file:
-        app = yaml.safe_load(file)
+    with open(app_file, encoding='utf-8') as file:
+        app = yaml.safe_load(file.read())
 
     if app['bypasses'] is None:
         row = list()
         row.append(f"[{app['name']}]({app['uri']})") 
         row.append('')
-        row.append("No bypass available")
+        row.append("No known bypass")
         row.append("")
         table_matrix.append(row)
         continue
@@ -39,7 +39,7 @@ for app_file in apps_files:
             bypass_tweak_repo = f"[repo]({bypasses[bypass['name']]['repo']})" if 'repo' in bypasses[bypass['name']] else None
             bypass_tweak_guide = f"[repo]({bypasses[bypass['name']]['guide']})" if 'guide' in bypasses[bypass['name']] else None
 
-            bypass_tweak_info = f" ({', '.join(filter(None.__ne__, [bypass_tweak_repo, bypass_tweak_guide]))})" if bypass_tweak_repo or bypass_tweak_guide else ''
+            bypass_tweak_info = f" ({', '.join(filter(None, [bypass_tweak_repo, bypass_tweak_guide]))})" if (bypass_tweak_repo or bypass_tweak_guide) else ''
             row.append(bypass_tweak + bypass_tweak_info)
 
             notes_from_bypass = bypasses[bypass['name']]['notes'] if 'notes' in bypasses[bypass['name']] else ''

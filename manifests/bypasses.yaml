@@ -1,30 +1,30 @@
 A-Bypass:
   repo: https://repo.co.kr
-  guide: /jailbreak/bypasses/tweaks/a-bypass
+  guide: /tools/tweaks?id=a-bypass
 Hestia:
   repo: https://repo.packix.com
-  guide: /jailbreak/bypasses/tweaks/hestia
+  guide: /tools/tweaks?id=hestia
 
 HideJB:
   repo: https://apt.thebigboss.org/repofiles/cydia
-  guide: /jailbreak/bypasses/tweaks/hidejb
+  guide: /tools/tweaks?id=hidejb
 
 Liberty Lite (Beta):
   repo: https://ryleyangus.com/repo
-  guide: /jailbreak/bypasses/tweaks/liberty-lite
+  guide: /tools/tweaks?id=liberty-lite
 
 Shadow:
   repo: https://ios.jjolano.me
-  guide: /jailbreak/bypasses/tweaks/shadow
+  guide: /tools/tweaks?id=shadow
 
 Choicy:
   repo: https://opa334.github.io
-  guide: /jailbreak/bypasses/non-bypasses/choicy
+  guide: /tools/non-bypasses?id=choicy
   notes: Disable tweak injection in Choicy.
 
 libhooker-configurator:
   repo: https://repo.theodyssey.dev
-  guide: /jailbreak/bypasses/non-bypasses/libhooker-configurator
+  guide: /tools/non-bypasses?id=libhooker-configurator
   notes: Only available for jailbreaks using libhooker (e.g. Taurine, Odyssey). Disable tweak injection in the libhooker app after installing.
 
 FlyJB:
@@ -35,7 +35,7 @@ FlyJB X:
 
 vnodebypass:
   repo: https://cydia.ichitaso.com
-  guide: /jailbreak/bypasses/tweaks/kernel-level/vnodebypass
+  guide: /tools/kernel-level?id=vnodebypass
   notes: For iOS 14 only. Be careful when using vnodebypass, as it is a kernel-level bypass, which can harm your device.
 
 BarclaysPwn:
@@ -61,7 +61,7 @@ Neighbors by Ring JB Bypass:
 
 KernBypass:
   repo: https://repo.xsf1re.kr
-  guide: /jailbreak/bypasses/tweaks/kernel-level/kernbypass
+  guide: /tools/kernel-level?id=kernbypass
   notes: For iOS 13 and below. Be careful when using KernBypass, as it is a kernel-level bypass, which can harm your device.
 
 PREMIER Credit Card JB Bypass:

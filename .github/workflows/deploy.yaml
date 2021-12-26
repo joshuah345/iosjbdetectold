@@ -32,7 +32,7 @@ jobs:
         name: Updating bypass table
         run: |  
           python ci/main.py
-          cp README.md publish/docs/README.md
+          cp README.md publish/docs/app-list.md
       -
         name: Push updated table
         uses: s0/git-publish-subdir-action@develop

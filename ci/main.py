@@ -46,7 +46,7 @@ for app_file in apps_files:
             bypass_tweak_info = f" ({', '.join(filter(None, [bypass_tweak_repo, bypass_tweak_guide]))})" if (bypass_tweak_repo or bypass_tweak_guide) else ''
             row.append(bypass_tweak + bypass_tweak_info)
 
-            notes_from_version = "Use AppStore++ ([repo](https://cokepokes.github.io)) to downgrade. " if ('version' in bypass and bypass['name'] != "AppStore++") else ''
+            notes_from_version = "Use AppStore++ ([repo](https://sharerepo.stkc.win/?repo=https://cokepokes.github.io)) to downgrade. " if ('version' in bypass and bypass['name'] != "AppStore++") else ''
             notes_from_bypass = f"{bypasses[bypass['name']]['notes']} " if 'notes' in bypasses[bypass['name']] else ''
             notes_from_manifest = bypass['notes'] if 'notes' in bypass else ''
             row.append(notes_from_version + notes_from_bypass + notes_from_manifest)

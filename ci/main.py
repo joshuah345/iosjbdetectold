@@ -58,7 +58,7 @@ for app_file in apps_files:
             logger.error('Neither name nor notes were supplied for this bypass!')
             continue
         table_matrix.append(row)
-table_matrix.sort(key=lambda app: app[0])
+table_matrix.sort(key=lambda app: app[0].str.lower())
 
 writer = MarkdownTableWriter(
     headers=["App", "Version", "Bypass", "Notes"],

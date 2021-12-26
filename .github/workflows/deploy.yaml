@@ -18,7 +18,7 @@ jobs:
         name: Checkout publishing branch
         uses: actions/checkout@v2
         with:
-          ref: publish
+          ref: docsify
           path: ./publish
       -
         name: Setup Python
@@ -32,13 +32,13 @@ jobs:
         name: Updating bypass table
         run: |  
           python ci/main.py
-          cp README.md publish/README.md
+          cp README.md publish/docs/README.md
       -
         name: Push updated table
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
-          BRANCH: publish
+          BRANCH: docsify
           FOLDER: publish
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           

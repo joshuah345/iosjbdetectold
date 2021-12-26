@@ -1,0 +1,5 @@
+name: Mercado Libre
+uri: https://apps.apple.com/us/app/mercado-libre/id463624852
+bypasses: 
+  - name: Choicy
+  - name: libhooker-configurator

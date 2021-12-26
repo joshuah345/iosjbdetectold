@@ -1,0 +1,4 @@
+name: "McDonald's Canada"
+uri: https://apps.apple.com/ca/app/mcdonalds-canada/id375695000
+bypasses:
+  - name: A-Bypass

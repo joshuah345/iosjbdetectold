@@ -1,0 +1,4 @@
+name: MB Bank
+uri: https://apps.apple.com/vn/app/mb-bank/id1205807363
+bypasses:
+  - name: Shadow

@@ -1,0 +1,4 @@
+name: "McDonald's"
+uri: https://apps.apple.com/us/app/mcdonalds/id922103212
+bypasses:
+  - name: Liberty Lite (Beta)

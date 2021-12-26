@@ -17,7 +17,7 @@ These tools attempt to circumvent detection methods.
 
 > Relating to the above note: A-Bypass will notfy you if you have another bypass enabled, or if A-Bypass cannot inject itself into the app you enabled and launched.
 
-?> If the list of apps doesn't display, respring. If not, reinstall Rocketbootstrap and AppList.
+?> If the list of apps doesn't display, respring. If not, reinstall RocketBootstrap and AppList (both are from ([rpetrich's repo](https://sharerepo.stkc.win/?repo=https://rpetri.ch/repo))).
 
 ## Hestia
 

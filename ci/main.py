@@ -23,40 +23,33 @@ apps_files = [os.path.join(apps_dir, f) for f in os.listdir(apps_dir) if os.path
 for app_file in apps_files:
     with open(app_file, encoding='utf-8') as file:
         app = yaml.safe_load(file.read())
-
     if app['bypasses'] is None:
-        row = list()
-        row.append(f"[{app['name']}]({app['uri']})") 
-        row.append('')
-        row.append("No known bypass")
-        row.append("")
-        table_matrix.append(row)
+        table_matrix.append([f"[{app['name']}]({app['uri']})", '', 'No known bypass', ''])
         continue
-
+    
+    bypass_versions = str()
+    bypass_tweaks = str()
+    bypass_notes = str()
     for bypass in app['bypasses']:
-        row = list()
-        row.append(f"[{app['name']}]({app['uri']})") 
-        row.append(bypass['version'] if 'version' in bypass else '')
+        bypass_versions += f"{bypass['version']}<br>" if 'version' in bypass else '<br>'
 
         if 'name' in bypass:
             bypass_tweak = f"[{bypass['name']}]({bypasses[bypass['name']]['guide']})" if 'guide' in bypasses[bypass['name']] else bypass['name']
-            bypass_tweak_repo = f"[repo](https://sharerepo.stkc.win/?repo={bypasses[bypass['name']]['repo']})" if 'repo' in bypasses[bypass['name']] else None
+            bypass_tweak_repo = f" ([repo](https://sharerepo.stkc.win/?repo={bypasses[bypass['name']]['repo']}))" if 'repo' in bypasses[bypass['name']] else None
+            bypass_tweaks += bypass_tweak + bypass_tweak_repo + '<br>'
 
-            bypass_tweak_info = f" ({', '.join(filter(None, [bypass_tweak_repo]))})" if (bypass_tweak_repo) else ''
-            row.append(bypass_tweak + bypass_tweak_info)
-
-            notes_from_version = "Use AppStore++ ([repo](https://sharerepo.stkc.win/?repo=https://cokepokes.github.io)) to downgrade. " if ('version' in bypass and bypass['name'] != "AppStore++") else ''
+            notes_from_version = "Use AppStore++ ([repo](https://sharerepo.stkc.win/?repo=https://cokepokes.github.io)) to downgrade.<br>" if ('version' in bypass and bypass['name'] != "AppStore++") else ''
             notes_from_bypass = f"{bypasses[bypass['name']]['notes']} " if 'notes' in bypasses[bypass['name']] else ''
             notes_from_manifest = bypass['notes'] if 'notes' in bypass else ''
-            row.append(notes_from_version + notes_from_bypass + notes_from_manifest)
+            bypass_notes += notes_from_version + (f"**{bypass['name']}**: " + notes_from_bypass + notes_from_manifest + '<br>' if (notes_from_bypass or notes_from_manifest) else '')
         elif 'notes' in bypass:
             logger.warning('Bypass name not specified, printing notes only')
-            row.append('')
-            row.append(bypass['notes'] if 'notes' in bypass else '')
+            bypass_tweaks += '<br>'
+            bypass_notes += f"{bypass['notes']}<br>" if 'notes' in bypass else '<br>'
         else: 
             logger.error('Neither name nor notes were supplied for this bypass!')
-            continue
-        table_matrix.append(row)
+            continue  
+    table_matrix.append([f"[{app['name']}]({app['uri']})", bypass_versions, bypass_tweaks, bypass_notes])
 table_matrix.sort(key=lambda app: app[0].lower())
 
 writer = MarkdownTableWriter(

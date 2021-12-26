@@ -1,3 +1,3 @@
 # iOS Jailbreak Detection List
 
-Made using docstify
+Made using docsify and python

@@ -1,5 +1,5 @@
 name: App Request
-description: File a app you want to see added to the table
+description: File an app you want to see added to the table
 title: "[Request]: "
 labels: ["request"]
 body:
@@ -8,23 +8,31 @@ body:
       value: | 
         Please ensure that your app isn't already listed at https://joshuah345.github.io/#/ before making an issue.  
         However, if a current bypass isn't working, making an issue is fine.
+
+        Keep in mind that apps from Niantic/Nintendo (such as Pokémon Go) are patched frequently to patch their jailbreak detection. We will not deal with these apps, or any other apps of a similar nature.
   - type: input
     id: tweak
     attributes:
       label: App to request
       description: Make the name as close to what's on App Store as possible.
-      placeholder: ex. Pokemon Go
+      placeholder: ex. Pokémon Go
   - type: input
     id: appstore_uri
     attributes:
       label: App Store link
       description: The easiest way to find an App Store link is to google `site:apps.apple.com <app name>` and copy link of first result.
       placeholder: https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345
+  - type: input
+    id: appstore_version
+    attributes:
+      label: App version
+      description: Latest version of the app (when the issue was made). You can look for it on the What's New section of an App Store listing
+      placeholder: '0.191.3'
   - type: textarea
     id: bypass_tried
     attributes:
       label: Bypass tried
-      description: Did you try any bypass? What worked?
+      description: Did you try any bypasses? What worked?
   - type: checkboxes
     id: checklist
     attributes:

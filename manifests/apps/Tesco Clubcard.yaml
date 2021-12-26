@@ -1,0 +1,6 @@
+name: Tesco Clubcard
+uri: https://apps.apple.com/gb/app/tesco-clubcard/id351841850
+bypasses:
+  - name: Liberty Lite (Beta)
+  - name: HideJB
+    notes: Disable the "plus more beta" option in HideJB

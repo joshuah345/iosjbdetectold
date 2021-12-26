@@ -1,0 +1,4 @@
+name: Salesforce
+uri: https://apps.apple.com/us/app/salesforce/id404249815
+bypasses:
+  - notes: Warning popup but lets you use it

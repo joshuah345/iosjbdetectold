@@ -1,0 +1,4 @@
+name: USAA Mobile
+uri: https://apps.apple.com/us/app/usaa-mobile/id312325565
+bypasses:
+  - name: USAABP

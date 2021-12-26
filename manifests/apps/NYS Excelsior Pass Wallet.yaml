@@ -1,0 +1,6 @@
+name: NYS Excelsior Pass Wallet
+uri: https://apps.apple.com/us/app/nys-excelsior-pass-wallet/id1552933587
+bypasses:
+  - name: A-Bypass
+  - name: Shadow
+  - name: Hestia

@@ -1,0 +1,4 @@
+name: "My McDonald's"
+uri: https://apps.apple.com/gb/app/my-mcdonalds-uk/id1082476620
+bypasses:
+  - name: HideJB

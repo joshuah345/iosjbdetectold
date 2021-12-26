@@ -1,0 +1,4 @@
+name: Onewheel
+uri: https://apps.apple.com/us/app/onewheel/id946642160
+bypasses:
+  - name: FlyJB X

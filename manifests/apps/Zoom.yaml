@@ -1,0 +1,4 @@
+name: Zoom
+uri: https://apps.apple.com/us/app/zoom-cloud-meetings/id546505307
+bypasses:
+  - name: Zoom JB Bypass

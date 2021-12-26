@@ -1,0 +1,4 @@
+name: Tastea
+uri: https://apps.apple.com/us/app/tastea/id1439421364
+bypasses:
+  - name: Liberty Lite (Beta)

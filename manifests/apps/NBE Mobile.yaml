@@ -1,0 +1,4 @@
+name: NBE Mobile
+uri: https://apps.apple.com/us/app/nbe-mobile/id1486145357
+bypasses:
+  - name: Liberty Lite (Beta)

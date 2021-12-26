@@ -1,0 +1,4 @@
+name: ViCA
+uri: https://apps.apple.com/dz/app/vica/id821510523
+bypasses:
+  - name: Liberty Lite (Beta)

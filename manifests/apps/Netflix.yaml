@@ -1,0 +1,5 @@
+name: Netflix
+uri: https://apps.apple.com/us/app/netflix/id363590051
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

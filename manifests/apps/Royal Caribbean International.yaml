@@ -1,0 +1,4 @@
+name: Royal Caribbean International
+uri: https://apps.apple.com/us/app/royal-caribbean-international/id1260728016
+bypasses:
+  - name: Shadow

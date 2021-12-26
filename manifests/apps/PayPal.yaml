@@ -1,0 +1,4 @@
+name: PayPal
+uri: https://apps.apple.com/us/app/paypal-send-shop-manage/id283646709
+bypasses: 
+  - name: Liberty Lite (Beta)

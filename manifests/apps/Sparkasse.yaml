@@ -1,0 +1,4 @@
+name: Sparkasse
+uri: https://apps.apple.com/us/app/sparkasse-your-mobile-branch/id320599923
+bypasses:
+  - name: FlyJB

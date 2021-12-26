@@ -1,0 +1,5 @@
+name: Musemage
+uri: https://apps.apple.com/us/app/musemage/id951615851
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

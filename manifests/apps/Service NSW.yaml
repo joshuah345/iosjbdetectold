@@ -1,0 +1,4 @@
+name: Service NSW
+uri: https://apps.apple.com/au/app/service-nsw/id577283433
+bypasses:
+  - name: Liberty Lite (Beta)

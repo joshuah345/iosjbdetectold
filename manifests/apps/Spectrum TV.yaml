@@ -1,0 +1,4 @@
+name: Spectrum TV
+uri: https://apps.apple.com/us/app/spectrum-tv/id420455839
+bypasses:
+  - name: Liberty Lite (Beta)

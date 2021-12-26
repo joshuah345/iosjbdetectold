@@ -1,0 +1,6 @@
+name: Pokémon GO
+uri: https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345
+bypasses:
+  - name: SxBypass
+  - name: vnodebypass
+  - name: KernBypass

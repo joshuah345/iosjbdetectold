@@ -1,0 +1,4 @@
+name: Takarék MobilApp 
+uri: https://apps.apple.com/au/app/takar%C3%A9k-mobilapp/id1464905099
+bypasses:
+  - name: Liberty Lite (Beta)

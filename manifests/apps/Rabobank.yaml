@@ -1,0 +1,5 @@
+name: Rabobank
+uri: https://apps.apple.com/vn/app/rabobank/id346790636?l=vi
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

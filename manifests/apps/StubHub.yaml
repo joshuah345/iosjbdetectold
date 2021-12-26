@@ -1,0 +1,4 @@
+name: StubHub
+uri: https://apps.apple.com/us/app/stubhub-event-tickets/id366562751
+bypasses: 
+  - name: Liberty Lite (Beta)

@@ -1,0 +1,5 @@
+name: Tangerine Mobile Banking
+uri: https://apps.apple.com/ca/app/tangerine-mobile-banking/id847844097
+bypasses:
+  - name: Liberty Lite (Beta)
+  - name: Shadow

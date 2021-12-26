@@ -1,0 +1,5 @@
+name: Pro Camera by Moment
+uri: https://apps.apple.com/us/app/pro-camera-by-moment/id927098908
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

@@ -1,0 +1,4 @@
+name: Ticketmaster
+uri: https://apps.apple.com/us/app/ticketmaster-buy-sell-tickets/id500003565
+bypasses:
+  - name: Liberty Lite (Beta)

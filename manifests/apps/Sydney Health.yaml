@@ -1,0 +1,4 @@
+name: Sydney Health
+uri: https://apps.apple.com/us/app/sydney-health/id1463423283
+bypasses:
+  - name: HideJB

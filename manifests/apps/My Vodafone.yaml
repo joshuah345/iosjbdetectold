@@ -1,0 +1,4 @@
+name: My Vodafone
+uri: https://apps.apple.com/gb/app/my-vodafone/id370901726
+bypasses:
+  - name: Liberty Lite (Beta)

@@ -1,0 +1,5 @@
+name: OSN
+uri: https://apps.apple.com/us/app/osn-streaming-app/id862390640
+bypasses:
+  - name: A-Bypass
+  - name: Liberty Lite (Beta)

@@ -1,0 +1,4 @@
+name: S-pushTAN
+uri: https://apps.apple.com/us/app/s-pushtan/id563488727
+bypasses:
+  - name: Liberty Lite (Beta)

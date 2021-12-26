@@ -1,0 +1,4 @@
+name: Super Mario Run
+uri: https://apps.apple.com/us/app/super-mario-run/id1145275343
+bypasses:
+  - name: Liberty Lite (Beta)

@@ -30,6 +30,9 @@ libhooker-configurator:
 FlyJB:
   repo: https://repo.xsf1re.kr
 
+FlyJB X:
+  repo: https://repo.xsf1re.kr
+
 vnodebypass:
   repo: https://cydia.ichitaso.com
   guide: /jailbreak/bypasses/tweaks/kernel-level/vnodebypass
@@ -88,5 +91,9 @@ Microsoft Detection Bypass:
 
 AppStore++:
   repo: https://cokepokes.github.io
-  notes: Downgrade to the specified version with AppStore++
+  notes: Downgrade to the specified version with AppStore++.
+
+SxBypass:
+  repo: https://repo.sx-pokego.xyz
+  notes: SxBypass seems to only work with Cydia Substrate/Substitute, not libhooker.
 

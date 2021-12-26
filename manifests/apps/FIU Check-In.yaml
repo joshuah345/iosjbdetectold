@@ -1,0 +1,4 @@
+name: FIU Check-In
+uri: https://apps.apple.com/us/app/fiu-check-in/id1331452521
+bypasses:
+  - name: A-Bypass

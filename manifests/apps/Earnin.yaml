@@ -1,0 +1,4 @@
+name: Earnin
+uri: https://apps.apple.com/us/app/earnin-get-cash-before-payday/id723815926
+bypasses:
+  - name: vnodebypass

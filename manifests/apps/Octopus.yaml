@@ -1,0 +1,4 @@
+name: Octopus 八達通
+uri: https://apps.apple.com/hk/app/octopus-%E5%85%AB%E9%81%94%E9%80%9A/id1114430602?l=en
+bypasses:
+  - name: FlyJB

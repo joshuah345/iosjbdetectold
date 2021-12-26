@@ -1,0 +1,4 @@
+name: MyHyundai
+uri: https://apps.apple.com/us/app/myhyundai-with-bluelink/id893514610
+bypasses:
+  - name: HyundaiBypass

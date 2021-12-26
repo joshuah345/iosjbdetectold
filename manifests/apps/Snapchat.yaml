@@ -1,0 +1,5 @@
+name: Snapchat
+uri: https://apps.apple.com/us/app/snapchat/id447188370
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

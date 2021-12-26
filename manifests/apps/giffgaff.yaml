@@ -1,0 +1,4 @@
+name: giffgaff
+uri: https://apps.apple.com/gb/app/giffgaff/id571246020
+bypasses:
+  - name: Liberty Lite (Beta)

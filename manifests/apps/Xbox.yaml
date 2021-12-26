@@ -1,0 +1,4 @@
+name: Xbox
+uri: https://apps.apple.com/us/app/xbox/id736179781
+bypasses:
+  - name: Liberty Lite (Beta)

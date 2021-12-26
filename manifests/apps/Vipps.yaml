@@ -1,0 +1,4 @@
+name: Vipps
+uri: https://apps.apple.com/us/app/vipps/id984380185
+bypasses:
+  - name: FlyJB

@@ -1,0 +1,4 @@
+name: OpenRice
+uri: https://apps.apple.com/us/app/openrice/id310663323
+bypasses:
+  - name: FlyJB

@@ -1,0 +1,4 @@
+name: Olive Garden Italian Kitchen
+uri: https://apps.apple.com/us/app/olive-garden-italian-kitchen/id1067313166
+bypasses:
+  - name: Shadow

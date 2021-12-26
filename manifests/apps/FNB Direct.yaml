@@ -1,0 +1,4 @@
+name: FNB Direct
+uri: https://apps.apple.com/us/app/fnb-direct/id524987109
+bypasses:
+  - name: Shadow

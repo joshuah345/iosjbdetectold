@@ -39,8 +39,8 @@ jobs:
         name: Push updated table
         uses: s0/git-publish-subdir-action@develop
         env:
-          REPO: git@github.com:joshuah345/jbdetectlist.git
+          REPO: self
           BRANCH: publish
           FOLDER: publish
-          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.GITHUB_TOKEN }}
           

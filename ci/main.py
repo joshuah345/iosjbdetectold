@@ -39,11 +39,10 @@ for app_file in apps_files:
         row.append(bypass['version'] if 'version' in bypass else '')
 
         if 'name' in bypass:
-            bypass_tweak = f"{bypass['name']}" 
+            bypass_tweak = f"[{bypass['name']}]({bypasses[bypass['name']]['guide']})" if 'guide' in bypasses[bypass['name']] else bypass['name']
             bypass_tweak_repo = f"[repo](https://sharerepo.stkc.win/?repo={bypasses[bypass['name']]['repo']})" if 'repo' in bypasses[bypass['name']] else None
-            bypass_tweak_guide = f"[guide]({bypasses[bypass['name']]['guide']})" if 'guide' in bypasses[bypass['name']] else None
 
-            bypass_tweak_info = f" ({', '.join(filter(None, [bypass_tweak_repo, bypass_tweak_guide]))})" if (bypass_tweak_repo or bypass_tweak_guide) else ''
+            bypass_tweak_info = f" ({', '.join(filter(None, [bypass_tweak_repo]))})" if (bypass_tweak_repo) else ''
             row.append(bypass_tweak + bypass_tweak_info)
 
             notes_from_version = "Use AppStore++ ([repo](https://sharerepo.stkc.win/?repo=https://cokepokes.github.io)) to downgrade. " if ('version' in bypass and bypass['name'] != "AppStore++") else ''

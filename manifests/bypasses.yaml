@@ -34,7 +34,7 @@ FlyJB:
 FlyJB X:
   repo: https://repo.xsf1re.kr
   guide: /tools/tweaks?id=flyjb-amp-flyjb-x
-  
+
 vnodebypass:
   repo: https://cydia.ichitaso.com
   guide: /tools/kernel-level?id=vnodebypass
@@ -44,7 +44,7 @@ BarclaysPwn:
   repo: https://ios.jeffsjunk.co.uk
 
 ChaseBP:
-  repo: https://level3tjg.xyz/repo
+  repo: https://level3tjg.me/repo
 
 Funimation JB Bypass:
   repo: https://sarahh12099.github.io/repo
@@ -80,10 +80,7 @@ Flex 3 Patch:
   notes: Repo link is for Flex 3 itself.
 
 USAABP:
-  repo: https://level3tjg.xyz/repo
-
-UnSub:
-  repo: https://repo.nepeta.me
+  repo: https://level3tjg.me/repo
 
 Zoom JB Bypass:
   repo: https://sarahh12099.github.io/repo
@@ -98,4 +95,7 @@ AppStore++:
 SxBypass:
   repo: https://repo.sx-pokego.xyz
   notes: SxBypass seems to only work with Cydia Substrate/Substitute, not libhooker.
+
+UnSub:
+  repo: https://repo.nepeta.me
 

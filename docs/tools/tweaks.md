@@ -7,8 +7,10 @@ These tools attempt to circumvent detection methods.
 
 ?> Availiable from [MERONA Repo](https://repo.co.kr).
 
+> Tweak name in [Choicy](/tools/non-bypasses?id=choicy) or [libhooker-configurator](/tools/non-bypasses?id=libhooker-configurator): `!ABypass2`
+
 1. Launch Settings
-2. Locate the prefs for A-Bypass
+2. Scroll down and select A-Bypass
 3. Enable the tweak
 4. Press `Check For Updates`
 5. Scroll down and toggle the switch beside the app(s) to bypass.
@@ -22,15 +24,17 @@ These tools attempt to circumvent detection methods.
 ?> Availiable from [Packix](https://sharerepo.stkc.win/?repo=https://repo.packix.com).
 
 1. Launch Settings
-2. Locate the prefs for Hestia
+2. Scroll down and select Hestia
 3. Under `Enabled Applications` toggle the app(s) with jailbreak detection.
 
 ## Liberty Lite (Beta)
 
 ?> Available from [Ryley Angus' repo](https://sharerepo.stkc.win/?repo=https://ryleyangus.com/repo)
 
+> Tweak name in [Choicy](/tools/non-bypasses?id=choicy) or [libhooker-configurator](/tools/non-bypasses?id=libhooker-configurator): `zzzzzLiberty`
+
 1. Launch Settings
-2. Locate the prefs for Liberty Lite (Beta)
+2. Scroll down and select Liberty Lite (Beta)
 3. Toggle `Enable Liberty`
 4. Tap on `Block Jailbreak Detection`
 5. Enable the app(s) with jailbreak detecion.
@@ -42,10 +46,10 @@ These tools attempt to circumvent detection methods.
 
 > Preferences for Shadow are a somewhat more complex compared to other bypass tweaks. Some applications may require advanced configuration for them to function. The recommended settings are listed below.
 
-> HideJB is a fork of jjolano's Shadow, which is why it doesn't have an entry here.
+> HideJB is a fork of jjolano's Shadow, which is why it doesn't have its own entry.
 
 1. Launch Settings
-2. Locate the prefs for Shadow
+2. Scroll down and select Shadow
 3. Make sure `Enable Shadow` is toggled on.
 4. Make sure `Bypass Detection Libraries` is also enabled
 5. Set `Application Settings` to whitelist and Tap on `Applications`

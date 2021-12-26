@@ -13,7 +13,8 @@ jobs:
     steps:
       - 
         name: Checkout repository
-        uses: actions/checkout@v2
+        run:
+          git clone --depth 1 https://github.com/joshuah345/jbdetectlist
       -
         name: Setup Python
         uses: actions/setup-python@v2
@@ -27,12 +28,12 @@ jobs:
         run: python ci/main.py
       -
         name: Push updated table
-        env:
-          MESSAGE: "${{ format('Automatic deploy: {0}', github.event.commits[0].message) }}"
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-
-          git add ./app-list.md
-          git commit -m '$MESSAGE'
-          git push origin publish
+        uses: EndBug/add-and-commit@v7
+        with: 
+          add: './app-list.md'
+          branch: publish
+          author_name: 'github-actions[bot]'
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+          committer_name: ${{ github.event.pusher.name }}
+          committer_email: ${{ github.event.pusher.email }}
+          message: "${{ format('Automatic deploy: {0}', github.event.commits[0].message) }}"

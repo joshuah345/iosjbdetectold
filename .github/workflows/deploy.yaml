@@ -42,5 +42,5 @@ jobs:
           REPO: self
           BRANCH: publish
           FOLDER: publish
-          SSH_PRIVATE_KEY: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           

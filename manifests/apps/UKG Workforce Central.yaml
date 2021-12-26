@@ -1,0 +1,4 @@
+name: UKG Workforce Central
+uri: https://apps.apple.com/us/app/ukg-workforce-central/id404059113
+bypasses:
+  - name: Shadow

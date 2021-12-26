@@ -14,7 +14,7 @@ jobs:
       - 
         name: Checkout repository
         run:
-          git clone --depth 1 https://github.com/joshuah345/jbdetectlist
+          git clone --depth 1 https://github.com/joshuah345/jbdetectlist .
       -
         name: Setup Python
         uses: actions/setup-python@v2

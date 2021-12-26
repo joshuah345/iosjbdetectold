@@ -61,7 +61,7 @@ writer = MarkdownTableWriter(
 # Writing to the actual app-list.md
 if not args.print:
     headers_dir = os.path.join(__scriptdir, 'md-headers')
-    app_list_md = os.path.join(__scriptdir, '..', 'README.md')
+    app_list_md = os.path.join(__scriptdir, '..', 'app-list.md')
     with open(os.path.join(headers_dir, 'app-list.md'), encoding='utf-8', mode='r') as infile, open(app_list_md, encoding='utf-8', mode='w') as outfile:
         outfile.write(infile.read())
         outfile.write('\n\n')

@@ -1,6 +1,6 @@
 name: SumTotal Mobile
 uri: https://apps.apple.com/us/app/sumtotal-mobile/id1169347043
 bypasses:
-  - name: A-Bypas
+  - name: A-Bypass
   - name: HideJB
   - name: Shadow

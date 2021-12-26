@@ -29,10 +29,12 @@ libhooker-configurator:
 
 FlyJB:
   repo: https://repo.xsf1re.kr
+  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
 
 FlyJB X:
   repo: https://repo.xsf1re.kr
-
+  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
+  
 vnodebypass:
   repo: https://cydia.ichitaso.com
   guide: /tools/kernel-level?id=vnodebypass

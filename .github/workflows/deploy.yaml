@@ -13,8 +13,7 @@ jobs:
     steps:
       - 
         name: Checkout repository
-        run:
-          git clone --depth 1 https://github.com/joshuah345/jbdetectlist .
+        uses: actions/checkout@v2
       -
         name: Setup Python
         uses: actions/setup-python@v2
@@ -30,8 +29,9 @@ jobs:
         name: Push updated table
         uses: EndBug/add-and-commit@v7
         with: 
-          add: './app-list.md'
+          add: './README.md'
           branch: publish
+          branch_mode: create
           author_name: 'github-actions[bot]'
           author_email: 'github-actions[bot]@users.noreply.github.com'
           committer_name: ${{ github.event.pusher.name }}

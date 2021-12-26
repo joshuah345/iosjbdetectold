@@ -96,6 +96,9 @@ SxBypass:
   repo: https://repo.sx-pokego.xyz
   notes: SxBypass seems to only work with Cydia Substrate/Substitute, not libhooker.
 
+WFDBP:
+  repo: https://level3tjg.me/repo
+
 UnSub:
   repo: https://repo.nepeta.me
 

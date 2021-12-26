@@ -1,0 +1,4 @@
+name: UKG Dimensions
+uri: https://apps.apple.com/us/app/ukg-dimensions/id1321967136
+bypasses:
+  - name: WFDBP

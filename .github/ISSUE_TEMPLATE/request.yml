@@ -11,21 +11,25 @@ body:
   - type: input
     id: tweak
     attributes:
-      description: App to request
+      label: App to request
+      description: Make the name as close to what's on App Store as possible.
       placeholder: ex. Pokemon Go
   - type: input
     id: appstore_uri
     attributes:
-      description: App Store link of the app
+      label: App Store link
+      description: The easiest way to find an App Store link is to google `site:apps.apple.com <app name>` and copy link of first result.
       placeholder: https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345
   - type: textarea
     id: bypass_tried
     attributes:
+      label: Bypass tried
       description: Did you try any bypass? What worked?
   - type: checkboxes
     id: checklist
     attributes:
-      description: Checklist before submission
+      label: Checklist before submission
+      description: Please ensure you've matched all the criteria before submission.
       options:
         - label: The app is missing from the table, or bypasses are not working anymore.
           required: true

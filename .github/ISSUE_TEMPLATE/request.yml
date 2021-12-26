@@ -9,6 +9,8 @@ body:
         Please ensure that your app isn't already listed at https://joshuah345.github.io/#/ before making an issue.  
         However, if a current bypass isn't working, making an issue is fine.
 
+        Furthermore, please check if there are any other open issues for your app.
+
         Keep in mind that apps from Niantic/Nintendo (such as Pokémon Go) are patched frequently to patch their jailbreak detection. We will not deal with these apps, or any other apps of a similar nature.
   - type: input
     id: tweak
@@ -40,4 +42,6 @@ body:
       description: Please ensure you've matched all the criteria before submission.
       options:
         - label: The app is missing from the table, or bypasses are not working anymore.
+          required: true
+        - label: I have checked through all open issues and none matched my app.
           required: true

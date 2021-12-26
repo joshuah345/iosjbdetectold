@@ -30,6 +30,7 @@ jobs:
         uses: EndBug/add-and-commit@v7
         with: 
           add: './app-list.md'
+          branch: publish
           author_name: 'github-actions[bot]'
           author_email: 'github-actions[bot]@users.noreply.github.com'
           committer_name: ${{ github.event.pusher.name }}

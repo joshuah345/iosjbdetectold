@@ -2,6 +2,8 @@
 
 ## Choicy
 
+> If you're using a jailbreak with Coolstar's libhooker, please use [libhooker-configurator](#-libhooker-configurator) as its functions have been implemented into it.
+
 ?> Available from [opa334's repo](https://opa334.github.io/).
 
 ## Libhooker Configurator

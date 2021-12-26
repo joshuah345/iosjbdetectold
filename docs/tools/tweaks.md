@@ -19,3 +19,7 @@
 ## Shadow
 
 ?> Availiable from [jjolano's repo](https://sharerepo.stkc.win/?repo=https://ios.jjolano.me)
+
+## FlyJB & FlyJB X
+
+?> These bypasses were developed by Xsf1re, but he has taken down his repo and they are no longer maintained. We recommend you use [A-Bypass](#A-Bypass) or a kernel level bypass.

@@ -1,0 +1,5 @@
+name: Clash Royale
+uri: https://apps.apple.com/us/app/clash-royale/id1053012308
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

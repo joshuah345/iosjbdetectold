@@ -1,0 +1,5 @@
+name: FSB Mobile Banking
+uri: https://apps.apple.com/us/app/fsb-mobile-banking/id489187454
+bypasses: 
+  - name: Choicy
+  - name: libhooker-configurator

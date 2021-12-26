@@ -1,0 +1,4 @@
+name: ADIB Mobile Banking App
+uri: https://apps.apple.com/us/app/adib-mobile-banking-app/id1128180440
+bypasses:
+  - name: Liberty Lite (Beta)

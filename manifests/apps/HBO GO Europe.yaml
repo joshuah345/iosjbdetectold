@@ -1,0 +1,4 @@
+name: HBO GO Europe
+uri: https://apps.apple.com/si/app/hbo-go/id1099737113
+bypasses:
+  - name: Liberty Lite (Beta)

@@ -1,0 +1,84 @@
+A-Bypass:
+  repo: https://repo.co.kr
+
+Hestia:
+  repo: https://repo.packix.com
+
+HideJB:
+  repo: https://apt.thebigboss.org/repofiles/cydia
+
+Liberty Lite (Beta):
+  repo: https://ryleyangus.com/repo
+
+Shadow:
+  repo: https://ios.jjolano.me
+
+Choicy:
+  repo: https://opa334.github.io
+  notes: Disable tweak injection in Choicy.
+
+libhooker-configurator:
+  repo: https://repo.theodyssey.dev
+  notes: Only available for jailbreaks using libhooker (e.g. Taurine, Odyssey). Disable tweak injection in the libhooker app after installing.
+
+FlyJB:
+  repo: https://repo.xsf1re.kr
+
+vnodebypass:
+  repo: https://cydia.ichitaso.com
+  notes: For iOS 14 only. Be careful when using vnodebypass, as it is a kernel-level bypass, which can harm your device.
+
+BarclaysPwn:
+  repo: https://ios.jeffsjunk.co.uk
+
+ChaseBP:
+  repo: https://level3tjg.xyz/repo
+
+Funimation JB Bypass:
+  repo: https://sarahh12099.github.io/repo
+
+Gympass JB Bypass:
+  repo: https://sarahh12099.github.io/repo
+
+MKTBypass:
+  repo: https://ramen2x.github.io
+
+HyundaiBypass:
+  repo: https://repo.eskimo.dev
+
+Neighbors by Ring JB Bypass:
+  repo: https://sarahh12099.github.io/repo
+
+KernBypass:
+  repo: https://repo.xsf1re.kr
+  notes: For iOS 13 and below. Be careful when using KernBypass, as it is a kernel-level bypass, which can harm your device.
+
+PREMIER Credit Card JB Bypass:
+  repo: https://sarahh12099.github.io/repo
+
+PRESTO JB Bypass:
+  repo: https://sarahh12099.github.io/repo
+
+RDR2Patch:
+  repo: https://ryleyangus.com/repo
+
+Flex 3 Patch:
+  repo: https://getdelta.co
+  notes: Repo link is for Flex 3 itself.
+
+USAABP:
+  repo: https://level3tjg.xyz/repo
+
+UnSub:
+  repo: https://repo.nepeta.me
+
+Zoom JB Bypass:
+  repo: https://sarahh12099.github.io/repo
+
+Microsoft Detection Bypass:
+  repo: https://haoict.github.io/cydia
+
+AppStore++:
+  repo: https://cokepokes.github.io
+  notes: Downgrade to the specified version with AppStore++
+

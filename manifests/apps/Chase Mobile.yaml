@@ -1,0 +1,4 @@
+name: Chase Mobile
+uri: https://apps.apple.com/us/app/chase-mobile-bank-invest/id298867247
+bypasses:
+  - name: Liberty Lite (Beta)

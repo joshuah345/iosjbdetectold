@@ -1,0 +1,38 @@
+name: Deploy manifests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - 
+        name: Checkout repository
+        uses: actions/checkout@v2
+      -
+        name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          cache: 'pip'
+      -
+        name: Installing build dependencies
+        run: pip install -r ci/requirements.txt
+      -
+        name: Updating bypass table
+        run: python ci/main.py
+      -
+        name: Push updated table
+        uses: EndBug/add-and-commit@v7
+        with: 
+          add: './app-list.md'
+          branch: publish
+          author_name: 'github-actions[bot]'
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+          committer_name: ${{ github.event.pusher.name }}
+          committer_email: ${{ github.event.pusher.email }}
+          message: "${{ format('Automatic deploy: {0}', github.event.commits[0].message) }}"

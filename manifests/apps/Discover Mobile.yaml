@@ -1,0 +1,4 @@
+name: Discover Mobile
+uri: https://apps.apple.com/us/app/discover-mobile/id338010821
+bypasses:
+  - name: HideJB

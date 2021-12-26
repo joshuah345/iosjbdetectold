@@ -1,0 +1,4 @@
+name: 'Animal Crossing: Pocket Camp'
+uri: https://apps.apple.com/us/app/animal-crossing-pocket-camp/id1179915619
+bypasses:
+  - name: FlyJB

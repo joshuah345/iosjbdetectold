@@ -1,0 +1,4 @@
+name: Belfius Mobile
+uri: https://apps.apple.com/be/app/belfius-mobile-banking-app/id572835707
+bypasses:
+  - notes: Disables Face ID/Touch ID but works

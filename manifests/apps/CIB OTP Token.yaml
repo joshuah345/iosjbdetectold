@@ -1,0 +1,4 @@
+name: CIB OTP Token
+uri: https://apps.apple.com/eg/app/cib-otp-token/id1074048518
+bypasses:
+  - name: Liberty Lite (Beta)

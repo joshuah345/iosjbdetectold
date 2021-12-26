@@ -1,0 +1,14 @@
+chardet==4.0.0
+DataProperty==0.54.2
+mbstrdecoder==1.1.0
+packaging==21.3
+pathvalidate==2.5.0
+pyparsing==3.0.6
+pytablewriter==0.64.1
+python-dateutil==2.8.2
+pytz==2021.3
+PyYAML==6.0
+six==1.16.0
+tabledata==1.3.0
+tcolorpy==0.1.1
+typepy==1.3.0

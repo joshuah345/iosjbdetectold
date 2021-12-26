@@ -1,0 +1,5 @@
+name: Capital One Mobile
+uri: https://apps.apple.com/us/app/capital-one-mobile/id407558537
+bypasses: 
+  - name: Choicy
+  - name: libhooker-configurator

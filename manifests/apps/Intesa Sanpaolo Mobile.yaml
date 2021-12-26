@@ -1,0 +1,5 @@
+name: Intesa Sanpaolo Mobile
+uri: https://apps.apple.com/us/app/intesa-sanpaolo-mobile/id597360475
+bypasses:
+  - name: Liberty Lite (Beta)
+    version: '2.12.2'

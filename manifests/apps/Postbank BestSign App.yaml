@@ -1,0 +1,5 @@
+name: Postbank BestSign App
+uri: https://apps.apple.com/us/app/postbank-bestsign-app/id1442251022
+bypasses:
+  - name: AppStore++
+    version: '1.2.7'

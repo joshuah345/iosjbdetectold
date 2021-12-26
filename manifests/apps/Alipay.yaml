@@ -1,0 +1,4 @@
+name: Alipay
+uri: https://apps.apple.com/us/app/alipay-simplify-your-life/id333206289
+bypasses:
+  - name: A-Bypass

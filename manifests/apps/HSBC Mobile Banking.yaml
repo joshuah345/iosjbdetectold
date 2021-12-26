@@ -1,0 +1,4 @@
+name: HSBC Mobile Banking
+uri: https://apps.apple.com/us/app/hsbc-mobile-banking/id565993818
+bypasses:
+  - name: Liberty Lite (Beta)

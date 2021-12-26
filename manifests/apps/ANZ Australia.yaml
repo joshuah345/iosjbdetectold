@@ -1,0 +1,4 @@
+name: ANZ Australia
+uri: https://apps.apple.com/au/app/anz-australia/id870929663
+bypasses:
+  - name: Liberty Lite (Beta)

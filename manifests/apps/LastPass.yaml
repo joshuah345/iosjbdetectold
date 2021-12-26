@@ -1,0 +1,4 @@
+name: LastPass
+uri: https://apps.apple.com/us/app/lastpass-password-manager/id324613447
+bypasses:
+  - notes: Warning popup but lets you use it

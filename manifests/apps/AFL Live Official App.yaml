@@ -1,0 +1,4 @@
+name: AFL Live Official App
+uri: https://apps.apple.com/au/app/afl-live-official-app/id415427158
+bypasses:
+  - name: Liberty Lite (Beta)

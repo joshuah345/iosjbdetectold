@@ -1,0 +1,7 @@
+name: Hot Slide
+uri: https://apps.apple.com/us/app/hot-slide/id1332599245
+bypasses:
+  - name: Shadow
+    notes: Use BOTH Shadow and FlyJB
+  - name: FlyJB
+    notes: Use BOTH Shadow and FlyJB

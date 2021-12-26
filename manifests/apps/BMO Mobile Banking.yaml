@@ -1,0 +1,4 @@
+name: BMO Mobile Banking
+uri: https://apps.apple.com/ca/app/bmo-mobile-banking/id429080319
+bypasses:
+  - name: Liberty Lite (Beta)

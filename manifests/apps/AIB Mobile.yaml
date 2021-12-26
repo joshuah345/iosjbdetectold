@@ -1,0 +1,4 @@
+name: AIB Mobile
+uri: https://apps.apple.com/ie/app/aib-mobile/id468042881
+bypasses:
+  - name: Liberty Lite (Beta)

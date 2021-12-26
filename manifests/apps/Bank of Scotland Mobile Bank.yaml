@@ -1,0 +1,4 @@
+name: Bank of Scotland Mobile Bank
+uri: https://apps.apple.com/gb/app/bank-of-scotland-mobile-bank/id485728109
+bypasses:
+  - name: vnodebypass

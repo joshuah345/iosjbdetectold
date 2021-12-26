@@ -1,0 +1,4 @@
+name: BURGER KING App
+uri: https://apps.apple.com/us/app/burger-king-app/id638323895
+bypasses:
+  - name: Liberty Lite (Beta)

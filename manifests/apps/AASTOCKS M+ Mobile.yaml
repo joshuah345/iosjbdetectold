@@ -1,0 +1,4 @@
+name: AASTOCKS M+ Mobile
+uri: https://apps.apple.com/hk/app/aastocks-m-mobile/id368726182
+bypasses:
+  - name: FlyJB

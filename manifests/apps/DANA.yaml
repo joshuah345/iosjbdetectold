@@ -1,0 +1,4 @@
+name: DANA
+uri: https://apps.apple.com/us/app/dana/id1437123008
+bypasses:
+  - name: HideJB

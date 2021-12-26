@@ -1,0 +1,4 @@
+name: Banca Móvil BAC Credomatic
+uri: https://apps.apple.com/us/app/banca-m%C3%B3vil-bac-credomatic/id465508552
+bypasses: 
+  - name: Liberty Lite (Beta)

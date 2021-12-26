@@ -1,0 +1,4 @@
+name: Amazon Music
+uri: https://apps.apple.com/us/app/amazon-music-songs-podcasts/id510855668
+bypasses:
+  - name: vnodebypass

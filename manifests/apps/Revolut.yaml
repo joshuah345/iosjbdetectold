@@ -1,0 +1,9 @@
+name: Revolut
+uri: https://apps.apple.com/us/app/revolut/id932493382
+bypasses:
+  - name: A-Bypass
+    notes: May need to wipe app data with Apps Manager
+  - name: Liberty Lite (Beta)
+    notes: May need to wipe app data with Apps Manager
+  - name: Shadow
+    notes: May need to wipe app data with Apps Manager

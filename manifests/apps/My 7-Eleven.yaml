@@ -1,0 +1,4 @@
+name: My 7-Eleven
+uri: https://apps.apple.com/au/app/my-7-eleven/id1032594453
+bypasses:
+  - name: Liberty Lite (Beta)

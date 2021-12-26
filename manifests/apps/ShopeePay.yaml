@@ -1,4 +1,4 @@
 name: ShopeePay
-uri: https://apps.apple.com/vn/app/v%C3%AD-shopeepay/id1032301823?l=vi
+uri: https://apps.apple.com/vn/app/v%C3%AD-shopeepay/id1032301823
 bypasses:
   - name: Liberty Lite (Beta)

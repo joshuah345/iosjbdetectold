@@ -15,11 +15,11 @@ Shadow:
 
 Choicy:
   repo: https://opa334.github.io
-  notes: Disable tweak injection in Choicy
+  notes: Disable tweak injection in Choicy.
 
 libhooker-configurator:
   repo: https://repo.theodyssey.dev
-  notes: Disable tweak injection in the libhooker app after installing
+  notes: Only available for jailbreaks using libhooker (e.g. Taurine, Odyssey). Disable tweak injection in the libhooker app after installing.
 
 FlyJB:
   repo: https://repo.xsf1re.kr

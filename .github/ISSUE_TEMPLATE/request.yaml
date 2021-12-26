@@ -1,0 +1,31 @@
+name: App Request
+description: File a app you want to see added to the table
+title: "[Request]: "
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: | 
+        Please ensure that your app isn't already listed at https://joshuah345.github.io/#/ before making an issue.  
+        However, if a current bypass isn't working, making an issue is fine.
+  - type: input
+    id: tweak
+    attributes:
+      description: App to request
+      placeholder: ex. Pokemon Go
+  - type: input
+    id: appstore_uri
+    attributes:
+      description: App Store link of the app
+      placeholder: https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345
+  - type: textarea
+    id: bypass_tried
+    attributes:
+      description: Did you try any bypass? What worked?
+  - type: checkboxes
+    id: checklist
+    attributes:
+      description: Checklist before submission
+      options:
+        - label: The app is missing from the table, or bypasses are not working anymore.
+          required: true

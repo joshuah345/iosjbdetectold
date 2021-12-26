@@ -3,3 +3,4 @@ uri: https://apps.apple.com/us/app/microsoft-outlook/id951937596
 bypasses:
   - name: Shadow
   - name: FlyJB
+  - name: Microsoft Detection Bypass

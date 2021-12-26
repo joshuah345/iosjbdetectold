@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Untitled](README.md)
-* [App List](app-list.md)
+* [App List](README.md)
 
 ## Available Tools <a href="#bypasses" id="bypasses"></a>
 

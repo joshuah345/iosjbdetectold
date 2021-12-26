@@ -1,0 +1,4 @@
+name: Fiverr
+uri: https://apps.apple.com/us/app/fiverr-freelance-services/id346080608
+bypasses:
+  - name: A-Bypass

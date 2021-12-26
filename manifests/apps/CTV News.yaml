@@ -1,0 +1,4 @@
+name: CTV News
+uri: https://apps.apple.com/us/app/ctv-news/id427789951?l=vi
+bypasses:
+  - name: Liberty Lite (Beta)

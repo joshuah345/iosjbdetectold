@@ -1,0 +1,4 @@
+name: Global TV
+uri: https://apps.apple.com/ca/app/global-tv/id404050595
+bypasses:
+  - name: Liberty Lite (Beta)

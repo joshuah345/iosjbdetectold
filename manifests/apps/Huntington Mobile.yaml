@@ -1,0 +1,4 @@
+name: Huntington Mobile
+uri: https://apps.apple.com/us/app/huntington-mobile/id441599004
+bypasses: 
+  - name: Liberty Lite (Beta)

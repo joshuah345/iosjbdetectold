@@ -1,0 +1,4 @@
+name: CLP HK
+uri: https://apps.apple.com/us/app/clp-hk/id450725907
+bypasses:
+  - name: FlyJB

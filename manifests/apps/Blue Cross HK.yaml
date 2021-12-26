@@ -1,0 +1,4 @@
+name: Blue Cross HK
+uri: https://apps.apple.com/hk/app/blue-cross-hk/id1441274976?l=en
+bypasses:
+  - name: FlyJB

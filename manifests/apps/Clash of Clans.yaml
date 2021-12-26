@@ -1,0 +1,5 @@
+name: Clash of Clans
+uri: https://apps.apple.com/us/app/clash-of-clans/id529479190
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

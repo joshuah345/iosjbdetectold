@@ -1,0 +1,4 @@
+name: BoC Pay
+uri: https://apps.apple.com/hk/app/boc-pay/id1403690384?l=en
+bypasses:
+  - name: FlyJB

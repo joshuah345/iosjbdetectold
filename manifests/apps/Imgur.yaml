@@ -1,0 +1,5 @@
+name: Imgur
+uri: https://apps.apple.com/us/app/imgur-funny-meme-gif-maker/id639881495
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

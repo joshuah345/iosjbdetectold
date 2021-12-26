@@ -1,0 +1,4 @@
+name: Amex United Kingdom
+uri: https://apps.apple.com/gb/app/amex-united-kingdom/id399021772
+bypasses:
+  - name: A-Bypass

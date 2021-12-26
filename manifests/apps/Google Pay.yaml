@@ -1,0 +1,4 @@
+name: Google Pay
+uri: https://apps.apple.com/us/app/google-pay-save-pay-manage/id1193357041
+bypasses:
+  - name: Liberty Lite (Beta)

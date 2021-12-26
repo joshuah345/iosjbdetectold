@@ -76,5 +76,9 @@ Zoom JB Bypass:
   repo: https://sarahh12099.github.io/repo
 
 Microsoft Detection Bypass:
-    repo: https://haoict.github.io/cydia
+  repo: https://haoict.github.io/cydia
+
+AppStore++:
+  repo: https://cokepokes.github.io
+  notes: Downgrade to the specified version with AppStore++
 

@@ -1,16 +1,20 @@
-import os, yaml, logging
+import os, yaml, logging, argparse
 from pytablewriter import MarkdownTableWriter
 
 # Setup logging
 logging.basicConfig(level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
+parser = argparse.ArgumentParser()
+parser.add_argument('-p', '--print', action='store_true', help='Print result to stdout')
+args = parser.parse_args()
+
 # Initial constants
 __scriptdir = os.path.dirname(os.path.realpath(__file__))
 bypasses_file = os.path.join(__scriptdir, '..', 'manifests', 'bypasses.yaml')
 apps_dir = os.path.join(__scriptdir, '..', 'manifests', 'apps')
 
-with open(bypasses_file) as file:
+with open(bypasses_file, encoding='utf-8') as file:
     bypasses = yaml.safe_load(file)
 
 # List all files in manifests/apps
@@ -60,7 +64,14 @@ writer = MarkdownTableWriter(
     value_matrix=table_matrix,
     margin=1  # add a whitespace for both sides of each cell
 )
-writer.write_table()
 
-
-
+# Writing to the actual app-list.md
+if not args.print:
+    headers_dir = os.path.join(__scriptdir, 'md-headers')
+    app_list_md = os.path.join(__scriptdir, '..', 'app-list.md')
+    with open(os.path.join(headers_dir, 'app-list.md'), encoding='utf-8', mode='r') as infile, open(app_list_md, encoding='utf-8', mode='w') as outfile:
+        outfile.write(infile.read())
+        outfile.write('\n\n')
+        outfile.write(writer.dumps())
+else:
+    writer.write_table()

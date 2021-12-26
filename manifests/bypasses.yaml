@@ -7,7 +7,7 @@ Hestia:
 
 HideJB:
   repo: https://apt.thebigboss.org/repofiles/cydia
-  guide: /tools/tweaks?id=hidejb
+  guide: /tools/tweaks?id=shadow
 
 Liberty Lite (Beta):
   repo: https://ryleyangus.com/repo

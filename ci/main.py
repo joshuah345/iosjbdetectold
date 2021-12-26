@@ -44,7 +44,7 @@ for app_file in apps_files:
             bypass_notes += notes_from_version + (f"**{bypass['name']}**: " + notes_from_bypass + notes_from_manifest + '<br>' if (notes_from_bypass or notes_from_manifest) else '')
         elif 'notes' in bypass:
             logger.warning('Bypass name not specified, printing notes only')
-            bypass_tweaks += '<br>'
+            bypass_tweaks += ''
             bypass_notes += f"{bypass['notes']}<br>" if 'notes' in bypass else '<br>'
         else: 
             logger.error('Neither name nor notes were supplied for this bypass!')

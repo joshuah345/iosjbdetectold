@@ -14,14 +14,12 @@ jobs:
       - 
         name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          path: jbdetectlist/
       -
         name: Checkout publishing branch
         uses: actions/checkout@v2
         with:
           ref: publish
-          path: publish/
+          path: ./publish
       -
         name: Setup Python
         uses: actions/setup-python@v2
@@ -29,12 +27,12 @@ jobs:
           cache: 'pip'
       -
         name: Installing build dependencies
-        run: pip install -r jbdetectlist/ci/requirements.txt
+        run: pip install -r ci/requirements.txt
       -
         name: Updating bypass table
         run: |  
-          python jbdetectlist/ci/main.py
-          cp jbdetectlist/README.md publish/README.md
+          python ci/main.py
+          cp README.md publish/README.md
       -
         name: Push updated table
         uses: s0/git-publish-subdir-action@develop

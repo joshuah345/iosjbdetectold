@@ -5,3 +5,5 @@ The files to edit are all under `manifests/`:
         - Filename must be `<app name>.yaml`
 
 As each already have their own defined structure, please follow the format on existing files.
+
+All manifests must be encoded in UTF-8.

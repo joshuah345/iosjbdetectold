@@ -41,7 +41,7 @@ for app_file in apps_files:
         if 'name' in bypass:
             bypass_tweak = f"{bypass['name']}" 
             bypass_tweak_repo = f"[repo]({bypasses[bypass['name']]['repo']})" if 'repo' in bypasses[bypass['name']] else None
-            bypass_tweak_guide = f"[repo]({bypasses[bypass['name']]['guide']})" if 'guide' in bypasses[bypass['name']] else None
+            bypass_tweak_guide = f"[guide]({bypasses[bypass['name']]['guide']})" if 'guide' in bypasses[bypass['name']] else None
 
             bypass_tweak_info = f" ({', '.join(filter(None, [bypass_tweak_repo, bypass_tweak_guide]))})" if (bypass_tweak_repo or bypass_tweak_guide) else ''
             row.append(bypass_tweak + bypass_tweak_info)

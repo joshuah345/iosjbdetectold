@@ -1,6 +1,8 @@
 # Non-bypasses
 These tools are used for disabling and configuring tweak injection into processes.
 
+?> For further support in English, ask for help in the [r/Jailbreak Discord server](https://discord.gg/jb).
+
 ## Choicy
 
 > If you're using a jailbreak with libhooker, such as Chimera, Odyssey, odysseyra1n or Taurine, please use [libhooker-configurator](#libhooker-configurator), as Choicy's functions have been implemented into it.

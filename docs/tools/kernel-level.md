@@ -2,6 +2,8 @@
 
 !> Kernel-level bypasses are experimental. Exercise caution.
 
+?> For further support in English, ask for help in the [r/Jailbreak Discord server](https://discord.gg/jb).
+
 ## KernBypass
 
 !> Do not use KernBypass on any iOS version above 14.2 or below 12.0.

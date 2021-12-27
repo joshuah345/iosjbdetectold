@@ -3,6 +3,8 @@ These tools attempt to circumvent detection methods.
 
 !> Do not attempt to use multiple bypasses at once. It will result in conflicts and apps are very likely to crash if you do.
 
+?> For further support in English, ask for help in the [r/Jailbreak Discord server](https://discord.gg/jb).
+
 ## A-Bypass
 
 ?> Availiable from [MERONA Repo](https://repo.co.kr).

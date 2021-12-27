@@ -1,3 +1,4 @@
 name: Oral-B
 uri: https://apps.apple.com/us/app/oral-b/id698092608
-bypasses: null
+bypasses:
+  - notes: "Looks like jailbreak detection has been removed from the app; however, raise an issue on GitHub if you find any trouble."

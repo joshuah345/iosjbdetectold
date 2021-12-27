@@ -45,14 +45,13 @@ def main():
                 bypass_tweaks += bypass_tweak + bypass_tweak_repo + '<br>'
 
                 if not downgrade_noted and 'version' in bypass and bypass['name'] != "AppStore++":
-                    notes_from_version = f"Use AppStore++ ({markdown_link('repo', 'https://cokepokes.github.io', sharerepo=True)}) to downgrade.<br>"
+                    notes_from_version = f"- Use AppStore++ ({markdown_link('repo', 'https://cokepokes.github.io', sharerepo=True)}) to downgrade.<br>"
                     downgrade_noted = True 
                 else:
                     notes_from_version = ''
                 notes_from_bypass = f"{bypasses[bypass['name']]['notes']} " if 'notes' in bypasses[bypass['name']] else ''
                 notes_from_manifest = bypass['notes'] if 'notes' in bypass else ''
-                bypass_notes += notes_from_version + (f"**{bypass['name']}**: " + notes_from_bypass + notes_from_manifest + '<br>' if (notes_from_bypass or notes_from_manifest) else '')
-                bypass_notes = '- ' + bypass_notes if bypass_notes else ''
+                bypass_notes += notes_from_version + (f"- **{bypass['name']}**: " + notes_from_bypass + notes_from_manifest + '<br>' if (notes_from_bypass or notes_from_manifest) else '')
             elif 'notes' in bypass:
                 logger.warning('Bypass name not specified, printing notes only')
                 bypass_tweaks += ''

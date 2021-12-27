@@ -3,3 +3,4 @@ uri: https://apps.apple.com/us/app/netflix/id363590051
 bypasses:
   - name: Choicy
   - name: libhooker-configurator
+  - notes: "Looks like jailbreak detection has been removed from the app; however, raise an issue on GitHub if you find any trouble."

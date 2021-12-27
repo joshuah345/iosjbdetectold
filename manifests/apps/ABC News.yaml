@@ -1,3 +1,4 @@
 name: ABC News
 uri: https://apps.apple.com/us/app/abc-news/id300255638
-bypasses: null
+bypasses:
+  - notes: "Looks like jailbreak detection has been removed from the app; however, raise an issue on GitHub if you find any trouble."

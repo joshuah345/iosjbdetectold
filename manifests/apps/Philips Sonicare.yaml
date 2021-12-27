@@ -1,3 +1,7 @@
 name: Philips Sonicare
 uri: https://apps.apple.com/us/app/philips-sonicare/id1047099766
-bypasses: null
+bypasses:
+  - name: Liberty Lite (Beta)
+  - name: Choicy
+  - name: libhooker-configurator
+  - notes: Use Choicy **or** libhooker-configurator to allow only `zzzzzLiberty` to inject into Sonicare.

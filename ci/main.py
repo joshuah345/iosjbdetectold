@@ -2,7 +2,8 @@ import os, yaml, logging, argparse
 from pytablewriter import MarkdownTableWriter
 
 def markdown_link(name, uri, sharerepo=False):
-    return f"[{name}](https://sharerepo.stkc.win/?repo={uri})" if sharerepo else f"[{name}]({uri})"
+    sharerepo_site = "https://sharerepo.stkc.win/?repo="
+    return f"[{name}]({sharerepo_site}{uri})" if sharerepo else f"[{name}]({uri})"
 
 def main():
     # Setup logging

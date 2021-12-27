@@ -1,5 +1,5 @@
 name: Uconnect
 uri: https://apps.apple.com/us/app/uconnect/id1229236724
 bypasses:
-  - name: Flex 3 Patch
+  - name: Flex 3 Beta
     notes: '[Patch link](http://getflex.co/patch/Uconnect-Jailbreak-Bypass/app/Uconnect/id/47138)'

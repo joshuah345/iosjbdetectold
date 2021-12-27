@@ -4,4 +4,4 @@ bypasses:
   - name: A-Bypass
   - name: Liberty Lite (Beta)
   - name: Shadow
-  - notes: May need to wipe app data with Apps Manager ([repo](http://apt.thebigboss.org/repofiles/cydia))
+  - notes: May need to wipe app data with Apps Manager (from BigBoss)

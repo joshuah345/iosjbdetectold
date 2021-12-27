@@ -73,9 +73,9 @@ PRESTO JB Bypass:
 RDR2Patch:
   repo: https://ryleyangus.com/repo
 
-Flex 3 Patch:
+Flex 3 Beta:
   repo: https://getdelta.co
-  notes: Repo link is for Flex 3 itself.
+  notes: Repo link is for Flex 3 Beta itself.
 
 USAABP:
   repo: https://level3tjg.me/repo

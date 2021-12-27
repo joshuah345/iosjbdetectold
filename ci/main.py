@@ -55,7 +55,7 @@ def main():
             elif 'notes' in bypass:
                 logger.warning('Bypass name not specified, printing notes only')
                 bypass_tweaks += ''
-                bypass_notes += f"{bypass['notes']}<br>" if 'notes' in bypass else '<br>'
+                bypass_notes += f"- {bypass['notes']}<br>" if 'notes' in bypass else '<br>'
             else: 
                 logger.error('Neither name nor notes were supplied for this bypass!')
                 continue  

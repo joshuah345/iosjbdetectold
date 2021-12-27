@@ -52,6 +52,7 @@ def main():
                 notes_from_bypass = f"{bypasses[bypass['name']]['notes']} " if 'notes' in bypasses[bypass['name']] else ''
                 notes_from_manifest = bypass['notes'] if 'notes' in bypass else ''
                 bypass_notes += notes_from_version + (f"**{bypass['name']}**: " + notes_from_bypass + notes_from_manifest + '<br>' if (notes_from_bypass or notes_from_manifest) else '')
+                bypass_notes = '- ' + bypass_notes if bypass_notes else ''
             elif 'notes' in bypass:
                 logger.warning('Bypass name not specified, printing notes only')
                 bypass_tweaks += ''

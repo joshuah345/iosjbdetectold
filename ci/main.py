@@ -1,9 +1,14 @@
-import os, yaml, logging, argparse
+import os
+import yaml
+import logging
+import argparse
 from pytablewriter import MarkdownTableWriter
+
 
 def markdown_link(name, uri, sharerepo=False):
     sharerepo_site = "https://sharerepo.stkc.win/?repo="
     return f"[{name}]({sharerepo_site}{uri})" if sharerepo else f"[{name}]({uri})"
+
 
 def main():
     # Setup logging
@@ -44,15 +49,22 @@ def main():
                 bypass_versions.append(f"{bypass['version']}" if 'version' in bypass else '')
 
                 if 'name' in bypass:
-                    bypass_tweak = f"{markdown_link(bypass['name'], bypasses[bypass['name']]['guide'])}" if 'guide' in bypasses[bypass['name']] else bypass['name']
-                    bypass_tweak_repo = f" ({markdown_link('repo', bypasses[bypass['name']]['repo'], sharerepo=True)})" if 'repo' in bypasses[bypass['name']] else None
+                    bypass_tweak = f"{markdown_link(bypass['name'], bypasses[bypass['name']]['guide'])}" \
+                        if 'guide' in bypasses[bypass['name']] \
+                        else bypass['name']
+                    bypass_tweak_repo = f" ({markdown_link('repo', bypasses[bypass['name']]['repo'], sharerepo=True)})" \
+                        if 'repo' in bypasses[bypass['name']] \
+                        else None
                     bypass_tweaks.append(bypass_tweak + bypass_tweak_repo)
 
                     if not downgrade_noted and 'version' in bypass and bypass['name'] != "AppStore++":
-                        bypass_notes.append(f"- Use AppStore++ ({markdown_link('repo', appstorepp_repo, sharerepo=True)}) to downgrade.")
+                        bypass_notes.append(
+                            f"- Use AppStore++ ({markdown_link('repo', appstorepp_repo, sharerepo=True)}) to downgrade.")
                         downgrade_noted = True
 
-                    notes_from_bypass = f"{bypasses[bypass['name']]['notes']} " if 'notes' in bypasses[bypass['name']] else ''
+                    notes_from_bypass = f"{bypasses[bypass['name']]['notes']} " \
+                        if 'notes' in bypasses[bypass['name']] \
+                        else ''
                     notes_from_manifest = bypass['notes'] if 'notes' in bypass else ''
                     if notes_from_bypass or notes_from_manifest:
                         bypass_notes.append(f"- **{bypass['name']}**: " + notes_from_bypass + notes_from_manifest)
@@ -62,9 +74,10 @@ def main():
                 else: 
                     logger.error('Neither name nor notes were supplied for this bypass!')
                     continue  
-        table_matrix.append([f"{app_name}", '<br>'.join(bypass_versions), '<br>'.join(bypass_tweaks), '<br>'.join(bypass_notes)])
+        table_matrix.append([f"{app_name}", '<br>'.join(bypass_versions),
+                             '<br>'.join(bypass_tweaks), '<br>'.join(bypass_notes)])
 
-    table_matrix.sort(key=lambda app: app[0].lower())
+    table_matrix.sort(key=lambda a: a[0].lower())
     writer = MarkdownTableWriter(
         headers=["App", "Version", "Bypass", "Notes"],
         value_matrix=table_matrix,
@@ -77,10 +90,12 @@ def main():
     else:
         headers_dir = os.path.join(__scriptdir, 'md-headers')
         app_list_md = os.path.join(__scriptdir, '..', 'app-list.md')
-        with open(os.path.join(headers_dir, 'app-list.md'), encoding='utf-8', mode='r') as infile, open(app_list_md, encoding='utf-8', mode='w') as outfile:
+        with open(os.path.join(headers_dir, 'app-list.md'), encoding='utf-8', mode='r') as infile, \
+                open(app_list_md, encoding='utf-8', mode='w') as outfile:
             outfile.write(infile.read())
             outfile.write('\n\n')
             outfile.write(writer.dumps())
+
 
 if __name__ == "__main__":
     main()

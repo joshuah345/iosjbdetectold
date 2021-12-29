@@ -4,3 +4,5 @@
   - id: trailing-whitespace
     args: [--markdown-linebreak-ext=md]
   - id: check-yaml
+  - id: sort-simple-yaml
+    args: [./manifests/bypasses.yaml]

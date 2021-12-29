@@ -2,7 +2,12 @@
 Ensure you have a fairly recent Python 3 install, then you can install dependencies required for work:
 ```bash
 # Setup a venv
-python -m venv env/ && source env/bin/activate
+python -m venv env/
+
+# Activate venv
+source env/bin/activate # Unix systems
+env/Scripts/Activate.ps1 # PowerShell
+env/Scripts/activate.bat # cmd
 
 # Required to work on manifests
 pip install -r requirements.txt
@@ -11,8 +16,6 @@ pre-commit install
 # Required to work on the build script
 pip install -r ci/requirements.txt
 ```
-
-Windows users also need `sh`, which can be acquired from Git Bash or busybox.
 
 # Adding a new bypass/app
 The files to edit are all under `manifests/`:

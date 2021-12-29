@@ -17,6 +17,15 @@ pre-commit install
 pip install -r ci/requirements.txt
 ```
 
+If `pre-commit` is complaining about `UnicodeDecodeError`, a temporary workaround is to edit the pre-commit hooks to use UTF-8:
+```python
+# lib\site-packages\pre_commit_hooks\sort_simple_yaml.py
+# line 110
+        # snip
+        with open(filename, 'r+', encoding='utf8') as f:
+        # snip
+```
+
 # Adding a new bypass/app
 The files to edit are all under `manifests/`:
 - `bypasses.yaml` contains information on the bypass themselves; mainly, its name and the repo it's hosted on.

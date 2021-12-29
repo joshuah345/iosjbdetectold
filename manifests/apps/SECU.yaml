@@ -1,3 +1,7 @@
 name: SECU
 uri: https://apps.apple.com/us/app/secu/id1435916976
-bypasses: null
+bypasses:
+  - name: Liberty Lite (Beta)
+  - name: Choicy
+  - name: libhooker-configurator
+  - notes: Use Choicy **or** libhooker-configurator to allow injection for only `zzzzzLiberty`

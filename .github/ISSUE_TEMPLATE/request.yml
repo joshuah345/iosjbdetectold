@@ -30,6 +30,12 @@ body:
       label: App version
       description: Latest version of the app (when the issue was made). You can look for it on the What's New section of an App Store listing
       placeholder: '0.191.3'
+  - type: input
+    id: current_jailbreak
+    attributes:
+      label: Jailbreak
+      description: What jailbreak are you using?
+      placeholder: Odyssey
   - type: textarea
     id: bypass_tried
     attributes:

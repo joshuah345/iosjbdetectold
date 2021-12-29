@@ -97,6 +97,9 @@ SxBypass:
 WFDBP:
   repo: https://level3tjg.me/repo
 
+GenshinJailbreakBypass:
+  notes: It is currently not on any repo. You'll have to download and install it from [GitHub](https://github.com/iVoider/GenshinJailbreakBypass/releases).
+
 UnSub:
   repo: https://repo.nepeta.me
 

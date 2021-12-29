@@ -1,0 +1,4 @@
+name: Genshin Impact
+uri: https://apps.apple.com/us/app/genshin-impact/id1517783697
+bypasses:
+  - name: GenshinJailbreakBypass

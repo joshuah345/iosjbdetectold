@@ -1,4 +1,4 @@
 name: YONO SBI
 uri: https://apps.apple.com/us/app/yono-sbi-banking-and-lifestyle/id1231393474
-bypasses: 
+bypasses:
   - name: Liberty Lite (Beta)

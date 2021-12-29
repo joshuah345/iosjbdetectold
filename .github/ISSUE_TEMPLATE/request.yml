@@ -5,8 +5,8 @@ labels: ["request"]
 body:
   - type: markdown
     attributes:
-      value: | 
-        Please ensure that your app isn't already listed at https://joshuah345.github.io/#/ before making an issue.  
+      value: |
+        Please ensure that your app isn't already listed at https://joshuah345.github.io/#/ before making an issue.
         However, if a current bypass isn't working, making an issue is fine.
 
         Furthermore, please check if there are any other open issues for your app.

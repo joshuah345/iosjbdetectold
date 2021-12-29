@@ -1,4 +1,4 @@
 name: ING Italia
 uri: https://apps.apple.com/us/app/ing-italia/id583924672
-bypasses: 
+bypasses:
   - notes: Warning popup but lets you use it

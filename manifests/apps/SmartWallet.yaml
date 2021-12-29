@@ -1,4 +1,4 @@
 name: SmartWallet
 uri: https://apps.apple.com/us/app/smartwallet/id1302270848
-bypasses: 
+bypasses:
   - name: Liberty Lite (Beta)

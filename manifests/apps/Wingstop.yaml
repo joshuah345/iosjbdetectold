@@ -1,4 +1,4 @@
 name: Wingstop
 uri: https://apps.apple.com/us/app/wingstop/id454719277
-bypasses: 
+bypasses:
   - name: Liberty Lite (Beta)

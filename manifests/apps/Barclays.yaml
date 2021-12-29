@@ -1,4 +1,4 @@
 name: Barclays
 uri: https://apps.apple.com/gb/app/barclays/id536248734
-bypasses: 
+bypasses:
   - name: BarclaysPwn

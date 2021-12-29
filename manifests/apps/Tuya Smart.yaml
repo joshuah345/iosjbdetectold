@@ -1,4 +1,4 @@
 name: Tuya Smart
 uri: https://apps.apple.com/us/app/tuya-smart/id1034649547
-bypasses: 
+bypasses:
   - notes: Warning popup but lets you use it

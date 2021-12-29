@@ -1,4 +1,4 @@
 name: Mediolanum
 uri: https://apps.apple.com/us/app/mediolanum/id412610547
-bypasses: 
+bypasses:
   - name: Shadow

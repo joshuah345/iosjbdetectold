@@ -1,4 +1,4 @@
 name: Smart Life
 uri: https://apps.apple.com/us/app/smart-life-smart-living/id1115101477
-bypasses: 
+bypasses:
   - notes: Warning popup but lets you use it

@@ -1,3 +1,4 @@
 name: BDO Digital Banking
 uri: https://apps.apple.com/ph/app/bdo-digital-banking/id673015230
-bypasses: null
+bypasses: 
+ - name: vnodebypass

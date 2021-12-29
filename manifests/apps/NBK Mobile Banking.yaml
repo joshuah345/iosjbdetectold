@@ -1,0 +1,6 @@
+name: NBK Mobile Banking
+uri: https://apps.apple.com/us/app/nbk-mobile-banking/id451107234
+bypasses:
+  - name: NBKJB
+  - name: S-Bypass
+    notes: Open the Sbypasser app -> Customize Injection -> NBK -> Enable **only** OBJ-C Methods.

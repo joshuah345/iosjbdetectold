@@ -88,7 +88,7 @@ Microsoft Detection Bypass:
 
 AppStore++:
   repo: https://cokepokes.github.io
-  notes: Downgrade to the specified version with AppStore++.
+  notes: Downgrade the app to the specified version.
 
 SxBypass:
   repo: https://repo.sx-pokego.xyz
@@ -102,6 +102,9 @@ GenshinJailbreakBypass:
 
 PUBG JB Bypass:
   repo: https://apt.thebigboss.org/repofiles/cydia
+
+S-Bypass:
+  notes: '[Direct .deb download link](http://beinapple.me/debs/109.deb)'
 
 UnSub:
   repo: https://repo.nepeta.me

@@ -2,4 +2,3 @@ name: first direct
 uri: https://apps.apple.com/gb/app/first-direct/id405905004
 bypasses:
   - name: vnodebypass
-  - name: KernBypass

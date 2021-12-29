@@ -52,5 +52,5 @@ Each app has its own individual manifest under the `apps/` directory, which has 
         - If there are bypasses, the key contains an array, with each item containing these keys:
             - `name`: The name of the bypass, must be the same as a known bypass in `bypasses.yaml`
             - `notes`: Extra notes about using the bypass
-            - `version`: Specify a version to downgrade to for the bypass
+            - `version`: Specify a version to downgrade to for the bypass  
             Either `name` or `notes` must exist.

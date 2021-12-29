@@ -2,4 +2,5 @@
   rev: v4.1.0  # Use the ref you want to point at
   hooks:
   - id: trailing-whitespace
+    args: [--markdown-linebreak-ext=md]
   - id: check-yaml

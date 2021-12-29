@@ -1,3 +1,19 @@
+# Before working
+Ensure you have a fairly recent Python 3 install, then you can install dependencies required for work:
+```bash
+# Setup a venv
+python -m venv env/ && source env/bin/activate
+
+# Required to work on manifests
+pip install -r requirements.txt
+pre-commit install
+
+# Required to work on the build script
+pip install -r ci/requirements.txt
+```
+
+Windows users also need `sh`, which can be acquired from Git Bash or busybox.
+
 # Adding a new bypass/app
 The files to edit are all under `manifests/`:
 - `bypasses.yaml` contains information on the bypass themselves; mainly, its name and the repo it's hosted on.
@@ -33,5 +49,5 @@ Each app has its own individual manifest under the `apps/` directory, which has 
         - If there are bypasses, the key contains an array, with each item containing these keys:
             - `name`: The name of the bypass, must be the same as a known bypass in `bypasses.yaml`
             - `notes`: Extra notes about using the bypass
-            - `version`: Specify a version to downgrade to for the bypass  
+            - `version`: Specify a version to downgrade to for the bypass
             Either `name` or `notes` must exist.

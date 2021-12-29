@@ -5,4 +5,4 @@
     args: [--markdown-linebreak-ext=md]
   - id: check-yaml
   - id: sort-simple-yaml
-    files: ./manifests/bypasses.yaml
+    files: ^manifests/bypasses.yaml

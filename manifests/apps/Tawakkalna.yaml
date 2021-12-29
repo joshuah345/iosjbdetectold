@@ -1,0 +1,4 @@
+name: Tawakkalna
+uri: https://apps.apple.com/sa/app/tawakkalna-covid-19-ksa/id1506236754
+bypasses:
+  - name: S-Bypass

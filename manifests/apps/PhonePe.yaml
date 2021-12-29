@@ -1,5 +1,5 @@
 name: PhonePe
 uri: https://apps.apple.com/in/app/phonepe-recharge-investment/id1170055821
-bypasses: 
+bypasses:
   - name: A-Bypass
   - name: Liberty Lite (Beta)

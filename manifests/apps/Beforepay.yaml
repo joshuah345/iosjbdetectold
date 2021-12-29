@@ -1,4 +1,4 @@
 name: Beforepay
 uri: https://apps.apple.com/au/app/beforepay-pay-on-demand/id1478582360
-bypasses: 
+bypasses:
   - name: A-Bypass

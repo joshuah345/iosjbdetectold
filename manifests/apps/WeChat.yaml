@@ -1,4 +1,4 @@
 name: WeChat
 uri: https://apps.apple.com/us/app/wechat/id414478124
-bypasses: 
+bypasses:
   - name: A-Bypass

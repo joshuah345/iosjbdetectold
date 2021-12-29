@@ -35,7 +35,7 @@ def main():
         with open(app_file, encoding='utf-8') as file:
             app = yaml.safe_load(file.read())
 
-        app_name = markdown_link(app['name'], app['uri'])        
+        app_name = markdown_link(app['name'], app['uri'])
         bypass_versions = list()
         bypass_tweaks = list()
         bypass_notes = list()
@@ -73,9 +73,9 @@ def main():
                 elif 'notes' in bypass:
                     logger.warning('Bypass name not specified, printing notes only')
                     bypass_notes.append(f"- {bypass['notes']}")
-                else: 
+                else:
                     logger.error('Neither name nor notes were supplied for this bypass!')
-                    continue  
+                    continue
         table_matrix.append([f"{app_name}", '<br>'.join(bypass_versions),
                              '<br>'.join(bypass_tweaks), '<br>'.join(bypass_notes)])
 

@@ -1,42 +1,10 @@
 A-Bypass:
-  repo: https://repo.co.kr
   guide: /tools/tweaks?id=a-bypass
-Hestia:
-  repo: https://repo.packix.com
-  guide: /tools/tweaks?id=hestia
+  repo: https://repo.co.kr
 
-HideJB:
-  repo: https://apt.thebigboss.org/repofiles/cydia
-  guide: /tools/tweaks?id=shadow
-
-Liberty Lite (Beta):
-  repo: https://ryleyangus.com/repo
-  guide: /tools/tweaks?id=liberty-lite-beta
-
-Shadow:
-  repo: https://ios.jjolano.me
-  guide: /tools/tweaks?id=shadow
-
-Choicy:
-  repo: https://opa334.github.io
-  guide: /tools/non-bypasses?id=choicy
-
-libhooker-configurator:
-  repo: https://repo.theodyssey.dev
-  guide: /tools/non-bypasses?id=libhooker-configurator
-
-FlyJB:
-  repo: https://repo.xsf1re.kr
-  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
-
-FlyJB X:
-  repo: https://repo.xsf1re.kr
-  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
-
-vnodebypass:
-  repo: https://cydia.ichitaso.com
-  guide: /tools/kernel-level?id=vnodebypass
-  notes: For iOS 14 only. Be careful when using vnodebypass, as it is a kernel-level bypass, which can harm your device.
+AppStore++:
+  notes: Downgrade the app to the specified version.
+  repo: https://cokepokes.github.io
 
 BarclaysPwn:
   repo: https://ios.jeffsjunk.co.uk
@@ -44,25 +12,65 @@ BarclaysPwn:
 ChaseBP:
   repo: https://level3tjg.me/repo
 
+Choicy:
+  guide: /tools/non-bypasses?id=choicy
+  repo: https://opa334.github.io
+
+Flex 3 Beta:
+  notes: Repo link is for Flex 3 Beta itself.
+  repo: https://getdelta.co
+
+FlyJB X:
+  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
+  repo: https://repo.xsf1re.kr
+
+FlyJB:
+  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
+  repo: https://repo.xsf1re.kr
+
 Funimation JB Bypass:
   repo: https://sarahh12099.github.io/repo
+
+GenshinJailbreakBypass:
+  notes: It is currently not on any repo. You'll have to download and install it from [GitHub](https://github.com/iVoider/GenshinJailbreakBypass/releases).
 
 Gympass JB Bypass:
   repo: https://sarahh12099.github.io/repo
 
-MKTBypass:
-  repo: https://ramen2x.github.io
+Hestia:
+  guide: /tools/tweaks?id=hestia
+  repo: https://repo.packix.com
+
+HideJB:
+  guide: /tools/tweaks?id=shadow
+  repo: https://apt.thebigboss.org/repofiles/cydia
 
 HyundaiBypass:
   repo: https://repo.eskimo.dev
 
-Neighbors by Ring JB Bypass:
-  repo: https://sarahh12099.github.io/repo
+InteJB:
+  repo: https://julioverne.github.io
 
 KernBypass:
-  repo: https://repo.xsf1re.kr
   guide: /tools/kernel-level?id=kernbypass
-  notes: For iOS 13 and below. Be careful when using KernBypass, as it is a kernel-level bypass, which can harm your device.
+  notes: iOS 12.0 - 14.2. Exercise caution when using kernel-level bypasses.
+  repo: https://repo.xsf1re.kr
+
+Liberty Lite (Beta):
+  guide: /tools/tweaks?id=liberty-lite-beta
+  repo: https://ryleyangus.com/repo
+
+MKTBypass:
+  repo: https://ramen2x.github.io
+
+Microsoft Detection Bypass:
+  repo: https://haoict.github.io/cydia
+
+NBKJB:
+  repo: https://julioverne.github.io
+
+Neighbors by Ring JB Bypass:
+  repo: https://sarahh12099.github.io/repo
 
 PREMIER Credit Card JB Bypass:
   repo: https://sarahh12099.github.io/repo
@@ -70,36 +78,43 @@ PREMIER Credit Card JB Bypass:
 PRESTO JB Bypass:
   repo: https://sarahh12099.github.io/repo
 
+PUBG JB Bypass:
+  repo: https://apt.thebigboss.org/repofiles/cydia
+
+PicJB:
+  repo: https://julioverne.github.io
+
 RDR2Patch:
   repo: https://ryleyangus.com/repo
 
-Flex 3 Beta:
-  repo: https://getdelta.co
-  notes: Repo link is for Flex 3 Beta itself.
+S-Bypass:
+  notes: Paid bypass with in-app activation. [Direct .deb download link](http://beinapple.me/debs/109.deb).
+
+Shadow:
+  guide: /tools/tweaks?id=shadow
+  repo: https://ios.jjolano.me
+
+SxBypass:
+  notes: Only works with Cydia Substrate/Substitute (checkra1n/unc0ver), not libhooker.
+  repo: https://repo.sx-pokego.xyz
 
 USAABP:
+  repo: https://level3tjg.me/repo
+
+UnSub:
+  repo: https://repo.nepeta.me
+
+WFDBP:
   repo: https://level3tjg.me/repo
 
 Zoom JB Bypass:
   repo: https://sarahh12099.github.io/repo
 
-Microsoft Detection Bypass:
-  repo: https://haoict.github.io/cydia
+libhooker-configurator:
+  guide: /tools/non-bypasses?id=libhooker-configurator
+  repo: https://repo.theodyssey.dev
 
-AppStore++:
-  repo: https://cokepokes.github.io
-  notes: Downgrade to the specified version with AppStore++.
-
-SxBypass:
-  repo: https://repo.sx-pokego.xyz
-  notes: SxBypass seems to only work with Cydia Substrate/Substitute, not libhooker.
-
-WFDBP:
-  repo: https://level3tjg.me/repo
-
-GenshinJailbreakBypass:
-  notes: It is currently not on any repo. You'll have to download and install it from [GitHub](https://github.com/iVoider/GenshinJailbreakBypass/releases).
-
-UnSub:
-  repo: https://repo.nepeta.me
-
+vnodebypass:
+  guide: /tools/kernel-level?id=vnodebypass
+  notes: Exercise caution when using kernel-level bypasses.
+  repo: https://cydia.ichitaso.com

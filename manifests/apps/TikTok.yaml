@@ -1,0 +1,5 @@
+name: TikTok
+uri: https://apps.apple.com/us/app/tiktok/id835599320
+bypasses:
+  - name: AppStore++
+    version: '19.2.0'

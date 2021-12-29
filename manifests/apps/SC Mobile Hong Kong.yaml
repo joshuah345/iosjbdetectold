@@ -1,3 +1,5 @@
 name: SC Mobile Hong Kong
 uri: https://apps.apple.com/hk/app/sc-mobile-hong-kong/id445795688?l=en
-bypasses: null
+bypasses:
+  - name: vnodebypass
+  - notes: App constantly shows alerts that the device is jailbroken.

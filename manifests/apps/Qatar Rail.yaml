@@ -1,3 +1,4 @@
 name: Qatar Rail
 uri: https://apps.apple.com/us/app/qatar-rail/id962317816
-bypasses: null
+bypasses:
+  - name: vnodebypass

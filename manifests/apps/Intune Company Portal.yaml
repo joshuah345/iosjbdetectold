@@ -1,3 +1,4 @@
 name: Intune Company Portal
 uri: https://apps.apple.com/us/app/intune-company-portal/id719171358
-bypasses: null
+bypasses:
+  - name: Microsoft Detection Bypass

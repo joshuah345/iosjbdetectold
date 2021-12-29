@@ -1,3 +1,4 @@
 name: SambaMobile
-uri: https://apps.apple.com/sa/app/sambamobile-for-ipad/id484425078
-bypasses: null
+uri: https://apps.apple.com/sa/app/sambamobile/id382039330
+bypasses:
+  - name: vnodebypass

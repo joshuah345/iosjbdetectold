@@ -1,5 +1,5 @@
-name: Philips Sonicare
-uri: https://apps.apple.com/us/app/philips-sonicare/id1047099766
+name: ila Bank
+uri: https://apps.apple.com/bh/app/ila-bank/id1480238512
 bypasses:
   - name: Liberty Lite (Beta)
   - name: Choicy

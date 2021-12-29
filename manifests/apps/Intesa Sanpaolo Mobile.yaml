@@ -2,4 +2,7 @@ name: Intesa Sanpaolo Mobile
 uri: https://apps.apple.com/us/app/intesa-sanpaolo-mobile/id597360475
 bypasses:
   - name: Liberty Lite (Beta)
-    version: '2.12.2'
+  - name: Choicy
+  - name: libhooker-configurator
+  - notes: Use Choicy **or** libhooker-configurator to allow injection for only `zzzzzLiberty`
+  - notes: No bypass is required, however some features are disabled when a jailbreak is detected.

@@ -1,0 +1,5 @@
+name: Sohar International
+uri: https://apps.apple.com/us/app/sohar-international-mobile-app/id1116127121
+bypasses:
+  - name: vnodebypass
+  = name: KernBypass

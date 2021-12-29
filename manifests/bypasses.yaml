@@ -100,6 +100,9 @@ WFDBP:
 GenshinJailbreakBypass:
   notes: It is currently not on any repo. You'll have to download and install it from [GitHub](https://github.com/iVoider/GenshinJailbreakBypass/releases).
 
+PUBG JB Bypass:
+  repo: https://apt.thebigboss.org/repofiles/cydia
+
 UnSub:
   repo: https://repo.nepeta.me
 

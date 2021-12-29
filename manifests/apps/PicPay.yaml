@@ -1,0 +1,4 @@
+name: PicPay
+uri: https://apps.apple.com/us/app/picpay-app-de-pagamentos/id561524792
+bypasses:
+  - name: PicJB

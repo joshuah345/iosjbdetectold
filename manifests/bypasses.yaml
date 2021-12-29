@@ -36,7 +36,7 @@ FlyJB X:
 vnodebypass:
   repo: https://cydia.ichitaso.com
   guide: /tools/kernel-level?id=vnodebypass
-  notes: For iOS 14 only. Be careful when using vnodebypass, as it is a kernel-level bypass, which can harm your device.
+  notes: Exercise caution when using kernel-level bypasses.
 
 BarclaysPwn:
   repo: https://ios.jeffsjunk.co.uk
@@ -62,7 +62,7 @@ Neighbors by Ring JB Bypass:
 KernBypass:
   repo: https://repo.xsf1re.kr
   guide: /tools/kernel-level?id=kernbypass
-  notes: For iOS 13 and below. Be careful when using KernBypass, as it is a kernel-level bypass, which can harm your device.
+  notes: iOS 12.0 - 14.2. Exercise caution when using kernel-level bypasses.
 
 PREMIER Credit Card JB Bypass:
   repo: https://sarahh12099.github.io/repo
@@ -92,7 +92,7 @@ AppStore++:
 
 SxBypass:
   repo: https://repo.sx-pokego.xyz
-  notes: SxBypass seems to only work with Cydia Substrate/Substitute, not libhooker.
+  notes: Only works with Cydia Substrate/Substitute (checkra1n/unc0ver), not libhooker.
 
 WFDBP:
   repo: https://level3tjg.me/repo

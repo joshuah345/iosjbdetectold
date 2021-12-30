@@ -50,7 +50,7 @@ class App(Resource):
         parser.add_argument('fields', required=False)
 
         args = parser.parse_args()
-        search_results = return_results(self.db, args.search, 85)
+        search_results = return_results(self.db, args.search, 78)
 
         for index, res in enumerate(search_results):
             if res['bypasses']:

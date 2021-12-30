@@ -2,3 +2,4 @@ name: Barclays
 uri: https://apps.apple.com/gb/app/barclays/id536248734
 bypasses:
   - name: BarclaysPwn
+    version: '<2.65.1'

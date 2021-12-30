@@ -10,9 +10,10 @@ from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
 def return_results(list_of_dicts, query, threshold):
+    query = query.lower()
     scores = []
     for index, item in enumerate(list_of_dicts):
-        values = [item['name']]
+        values = [item['name'].lower()]
         ratios = [fuzz.partial_ratio(str(query), str(value)) for value in values] # ensure both are in string
         scores.append({ "index": index, "score": max(ratios)})
 

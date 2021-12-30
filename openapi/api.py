@@ -58,7 +58,7 @@ class App(Resource):
                 downgrade_noted = False
                 for bypass in res['bypasses']:
                     if 'name' in bypass:
-                        notes_from_bypass = f"{self.bypasses[bypass['name']]['notes']} " \
+                        notes_from_bypass = self.bypasses[bypass['name']]['notes'] \
                                             if 'notes' in self.bypasses[bypass['name']] \
                                             else ''
                         bypass['guide'] = self.bypasses[bypass['name']]['guide'] \

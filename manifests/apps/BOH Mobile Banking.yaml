@@ -1,3 +1,4 @@
 name: BOH Mobile Banking
 uri: https://apps.apple.com/us/app/boh-mobile-banking/id500266693
-bypasses: null
+bypasses: 
+- name: vnodebypass

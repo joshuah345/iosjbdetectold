@@ -1,3 +1,4 @@
 name: comdirect photoTAN App
 uri: https://apps.apple.com/us/app/comdirect-phototan-app/id623841273
-bypasses: null
+bypasses: 
+- name: vnodebypass

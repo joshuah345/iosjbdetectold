@@ -61,6 +61,9 @@ class App(Resource):
                         notes_from_bypass = f"{self.bypasses[bypass['name']]['notes']} " \
                                             if 'notes' in self.bypasses[bypass['name']] \
                                             else ''
+                        bypass['guide'] = self.bypasses[bypass['name']]['guide'] \
+                                            if 'guide' in self.bypasses[bypass['name']] \
+                                            else None
                         bypass['repository'] = self.bypasses[bypass['name']]['repository'] \
                                             if 'repository' in self.bypasses[bypass['name']] \
                                             else None
@@ -70,7 +73,6 @@ class App(Resource):
                                             else bypass['notes']
                     else:
                         bypass['notes'] = notes_from_bypass if notes_from_bypass else None
-                    bypass['guide'] = self.bypasses[bypass['name']]['guide'] if 'guide' in self.bypasses[bypass['name']] else None
 
                     detailed_bypass_info.append(bypass)
                 search_results[index]['bypasses'] = detailed_bypass_info

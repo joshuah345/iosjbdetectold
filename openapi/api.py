@@ -67,12 +67,7 @@ class App(Resource):
                         bypass['repository'] = self.bypasses[bypass['name']]['repository'] \
                                             if 'repository' in self.bypasses[bypass['name']] \
                                             else None
-                    if 'notes' in bypass:
-                        bypass['notes'] = [notes_from_bypass, bypass['notes']] \
-                                            if notes_from_bypass \
-                                            else bypass['notes']
-                    else:
-                        bypass['notes'] = notes_from_bypass if notes_from_bypass else None
+                        bypass['notes'] = [notes_from_bypass, bypass['notes']]
 
                     detailed_bypass_info.append(bypass)
                 search_results[index]['bypasses'] = detailed_bypass_info

@@ -82,7 +82,7 @@ class App(Resource):
 
 class GitHubWebhook(Resource):
     def __init__(self):
-        self.webhook_secret = os.environ.get('GITHUB_WEBHOOK_SECRET')
+        self.webhook_secret = os.environ.get('GITHUB_WEBHOOK_SECRET').encode('utf-8')
 
     def post(self):
         signature = 'sha256=' + hmac.new(self.webhook_secret, request.data, hashlib.sha256).hexdigest()

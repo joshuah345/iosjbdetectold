@@ -85,7 +85,7 @@ class GitHubWebhook(Resource):
         self.webhook_secret = os.environ.get('GITHUB_WEBHOOK_SECRET')
 
     def post(self):
-        signature = 'sha256=' + hmac.hexdigest(self.webhook_secret, request.data, hashlib.sha256)
+        signature = 'sha256=' + hmac.new(self.webhook_secret, request.data, hashlib.sha256).hexdigest()
         if hmac.compare_digest(signature, request.headers.get('X-Hub-Signature-256')):
             content = request.json
             if content['ref'] == 'refs/heads/main':

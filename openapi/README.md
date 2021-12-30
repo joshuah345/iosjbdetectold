@@ -1,3 +1,5 @@
+Current API: `https://beerpsi.me/api/v1/`
+
 # API
 A simple API intended for looking up bypass + app combinations. It currently has two public endpoints:
 

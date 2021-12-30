@@ -1,0 +1,80 @@
+'openapi': '3.0.3'
+'info':
+  'title': 'Jailbreak Bypass Detection'
+  'description': >
+    REST-ish API for querying jailbreak bypasses
+  'version': '0.1.0'
+  'contact':
+    'name': 'beerpsi, joshuah345'
+    'url': 'https://github.com/joshuah345/joshuah345.github.io'
+
+'servers':
+- 'url': '/api/v1'
+
+'security':
+- 'basicAuth': []
+
+'tags':
+- 'name': 'app'
+  'description': 'Query bypasses for apps'
+- 'name': 'bypasses'
+  'description': 'Query bypass tweaks'
+
+'paths':
+  '/app':
+    'get':
+      'tags':
+      - 'app'
+      'operationId': 'app'
+      'parameters':
+        - in: query
+          name: search
+          schema:
+            'type': string
+            'minimum': 1
+        - in: query
+          name: fields
+          schema:
+            'type': string
+      'summary': 'Get bypass tweaks for an app'
+      'responses':
+        '200':
+          'description': 'OK'
+          'content':
+            'application/json':
+              'schema':
+                '$ref': '#/components/schemas/AppBypassInformation'
+
+'components':
+  'schemas':
+    'AppBypassInformation':
+      'type': 'object'
+      'description': 'Bypass information for an app'
+      'required':
+      - 'status'
+      - 'app'
+      - 'bypasses'
+      'properties':
+        'status':
+          example: 'Successful'
+        'app':
+          'example': joeapp
+        'bypasses':
+          'example':
+            - name: 'vnodebypass'
+              repository:
+                uri: "https://cydia.ichitaso.com"
+                name: "ichitaso"
+              notes: "Exercise caution when using kernel-level bypasses."
+            - name: 'A-Bypass'
+              repository:
+                uri: "https://repo.co.kr"
+                name: "MERONA"
+              version: '<=6.9.420'
+              notes:
+                - 'Update definitions to latest.'
+                - 'Use Choicy or libhooker-configurator to allow only !ABypass2 to inject.'
+  'securitySchemes':
+    'basicAuth':
+      'type': 'http'
+      'scheme': 'basic'

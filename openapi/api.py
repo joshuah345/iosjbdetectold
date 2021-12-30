@@ -3,7 +3,7 @@ import yaml
 import logging
 import argparse
 
-from flask import Flask
+from flask import Flask, request
 from flask_restful import Resource, Api, reqparse
 
 from fuzzywuzzy import fuzz
@@ -83,9 +83,18 @@ class App(Resource):
             return {'status': 'Not Found'}
 
 
+class GitHubWebhook(Resource):
+    def post(self):
+        content = request.json
+        if content['ref'] == 'refs/heads/main':
+            os.system('git -C /var/www/jbdetectlist pull')
+            os.system('sudo /bin/systemctl restart jbdetectapi')
+
+
 app = Flask(__name__)
 api = Api(app)
 api.add_resource(App, '/app')
+api.add_resource(GitHubWebhook, '/gh-webhook')
 if __name__ == '__main__':
     app.run()
 

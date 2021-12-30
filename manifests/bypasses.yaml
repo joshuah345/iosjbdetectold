@@ -1,120 +1,153 @@
 A-Bypass:
   guide: /tools/tweaks?id=a-bypass
-  repo: https://repo.co.kr
+  repository:
+    uri: https://repo.co.kr
 
 AppStore++:
   notes: Downgrade the app to the specified version.
-  repo: https://cokepokes.github.io
+  repository:
+    uri: https://cokepokes.github.io
 
 BarclaysPwn:
-  repo: https://ios.jeffsjunk.co.uk
+  repository:
+    uri: https://ios.jeffsjunk.co.uk
 
 ChaseBP:
-  repo: https://level3tjg.me/repo
+  repository:
+    uri: https://level3tjg.me/repo
 
 Choicy:
   guide: /tools/non-bypasses?id=choicy
-  repo: https://opa334.github.io
+  repository:
+    uri: https://opa334.github.io
 
 Flex 3 Beta:
   notes: Repo link is for Flex 3 Beta itself.
-  repo: https://getdelta.co
+  repository:
+    uri: https://getdelta.co
 
 FlyJB X:
   guide: /tools/tweaks?id=flyjb-amp-flyjb-x
-  repo: https://repo.xsf1re.kr
+  repository:
+    uri: https://repo.xsf1re.kr
 
 FlyJB:
   guide: /tools/tweaks?id=flyjb-amp-flyjb-x
-  repo: https://repo.xsf1re.kr
+  repository:
+    uri: https://repo.xsf1re.kr
 
 Funimation JB Bypass:
-  repo: https://sarahh12099.github.io/repo
+  repository:
+    uri: https://sarahh12099.github.io/repo
 
 GenshinJailbreakBypass:
-  notes: It is currently not on any repo. You'll have to download and install it from [GitHub](https://github.com/iVoider/GenshinJailbreakBypass/releases).
+  notes: It is currently not on any repo. Download and install it from [GitHub](https://github.com/iVoider/GenshinJailbreakBypass/releases).
 
 Gympass JB Bypass:
-  repo: https://sarahh12099.github.io/repo
+  repository:
+    uri: https://sarahh12099.github.io/repo
 
 Hestia:
   guide: /tools/tweaks?id=hestia
-  repo: https://repo.packix.com
+  repository:
+    uri: https://repo.packix.com
 
 HideJB:
   guide: /tools/tweaks?id=shadow
-  repo: https://apt.thebigboss.org/repofiles/cydia
+  repository:
+    uri: https://apt.thebigboss.org/repofiles/cydia
 
 HyundaiBypass:
-  repo: https://repo.eskimo.dev
+  repository:
+    uri: https://repo.eskimo.dev
 
 InteJB:
-  repo: https://julioverne.github.io
+  repository:
+    uri: https://julioverne.github.io
 
 KernBypass:
   guide: /tools/kernel-level?id=kernbypass
   notes: iOS 12.0 - 14.2. Exercise caution when using kernel-level bypasses.
-  repo: https://repo.xsf1re.kr
+  repository:
+    uri: https://repo.xsf1re.kr
 
 Liberty Lite (Beta):
   guide: /tools/tweaks?id=liberty-lite-beta
-  repo: https://ryleyangus.com/repo
+  repository:
+    uri: https://ryleyangus.com/repo
 
 MKTBypass:
-  repo: https://ramen2x.github.io
+  repository:
+    uri: https://ramen2x.github.io
 
 Microsoft Detection Bypass:
-  repo: https://haoict.github.io/cydia
+  repository:
+    uri: https://haoict.github.io/cydia
 
 NBKJB:
-  repo: https://julioverne.github.io
+  repository:
+    uri: https://julioverne.github.io
 
 Neighbors by Ring JB Bypass:
-  repo: https://sarahh12099.github.io/repo
+  repository:
+    uri: https://sarahh12099.github.io/repo
 
 PREMIER Credit Card JB Bypass:
-  repo: https://sarahh12099.github.io/repo
+  repository:
+    uri: https://sarahh12099.github.io/repo
 
 PRESTO JB Bypass:
-  repo: https://sarahh12099.github.io/repo
+  repository:
+    uri: https://sarahh12099.github.io/repo
 
 PUBG JB Bypass:
-  repo: https://apt.thebigboss.org/repofiles/cydia
+  repository:
+    uri: https://apt.thebigboss.org/repofiles/cydia
 
 PicJB:
-  repo: https://julioverne.github.io
+  repository:
+    uri: https://julioverne.github.io
 
 RDR2Patch:
-  repo: https://ryleyangus.com/repo
+  repository:
+    uri: https://ryleyangus.com/repo
 
 S-Bypass:
   notes: Paid bypass with in-app activation. [Direct .deb download link](http://beinapple.me/debs/109.deb).
 
 Shadow:
   guide: /tools/tweaks?id=shadow
-  repo: https://ios.jjolano.me
+  repository:
+    uri: https://ios.jjolano.me
 
 SxBypass:
   notes: Only works with Cydia Substrate/Substitute (checkra1n/unc0ver), not libhooker.
-  repo: https://repo.sx-pokego.xyz
+  repository:
+    uri: https://repo.sx-pokego.xyz
 
 USAABP:
-  repo: https://level3tjg.me/repo
+  repository:
+    uri: https://level3tjg.me/repo
 
 UnSub:
-  repo: https://repo.nepeta.me
+  repository:
+    uri: https://repo.nepeta.me
 
 WFDBP:
-  repo: https://level3tjg.me/repo
+  repository:
+    uri: https://level3tjg.me/repo
 
 Zoom JB Bypass:
-  repo: https://sarahh12099.github.io/repo
+  repository:
+    uri: https://sarahh12099.github.io/repo
 
 libhooker-configurator:
   guide: /tools/non-bypasses?id=libhooker-configurator
-  repo: https://repo.theodyssey.dev
+  repository:
+    uri: https://repo.theodyssey.dev
 
 vnodebypass:
   guide: /tools/kernel-level?id=vnodebypass
   notes: Exercise caution when using kernel-level bypasses.
-  repo: https://cydia.ichitaso.com
+  repository:
+    uri: https://cydia.ichitaso.com

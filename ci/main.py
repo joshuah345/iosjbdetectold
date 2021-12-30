@@ -23,7 +23,6 @@ def main():
     __scriptdir = os.path.dirname(os.path.realpath(__file__))
     bypasses_file = os.path.join(__scriptdir, '..', 'manifests', 'bypasses.yaml')
     apps_dir = os.path.join(__scriptdir, '..', 'manifests', 'apps')
-    appstorepp_repo = 'https://cokepokes.github.io'
 
     with open(bypasses_file, encoding='utf-8') as file:
         bypasses = yaml.safe_load(file)
@@ -52,14 +51,14 @@ def main():
                     bypass_tweak = f"{markdown_link(bypass['name'], bypasses[bypass['name']]['guide'])}" \
                                         if 'guide' in bypasses[bypass['name']] \
                                         else bypass['name']
-                    bypass_tweak_repo = f" ({markdown_link('repo', bypasses[bypass['name']]['repo'], sharerepo=True)})" \
-                                            if 'repo' in bypasses[bypass['name']] \
+                    bypass_tweak_repo = f" ({markdown_link('repo', bypasses[bypass['name']]['repository']['uri'], sharerepo=True)})" \
+                                            if 'repository' in bypasses[bypass['name']] \
                                             else ''
                     bypass_tweaks.append(bypass_tweak + bypass_tweak_repo)
 
                     if not downgrade_noted and 'version' in bypass and bypass['name'] != "AppStore++":
                         bypass_notes.append(
-                            f"- Use AppStore++ ({markdown_link('repo', appstorepp_repo, sharerepo=True)}) to downgrade.")
+                            f"- Use AppStore++ ({markdown_link('repo', bypasses['AppStore++']['repository']['uri'], sharerepo=True)}) to downgrade.")
                         downgrade_noted = True
 
                     notes_from_bypass = f"{bypasses[bypass['name']]['notes']} " \

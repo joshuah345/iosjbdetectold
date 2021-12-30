@@ -71,8 +71,6 @@ class App(Resource):
                             bypass['notes'] = [notes_from_bypass, bypass['notes']]
                         elif notes_from_bypass:
                             bypass['notes'] = notes_from_bypass
-                        else:
-                            bypass['notes'] = None
                     detailed_bypass_info.append(bypass)
                 search_results[index]['bypasses'] = detailed_bypass_info
 

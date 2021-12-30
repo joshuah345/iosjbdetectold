@@ -1,0 +1,4 @@
+name: Jyske Bank
+uri: https://apps.apple.com/us/app/jyske-bank/id1489702000
+bypasses:
+  - name: Jyske Bank JB Bypass

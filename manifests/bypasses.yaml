@@ -65,6 +65,10 @@ InteJB:
   repository:
     uri: https://julioverne.github.io
 
+Jyske Bank JB Bypass:
+  repository:
+    uri: https://ios.jeffsjunk.co.uk
+
 KernBypass:
   guide: https://bypass.beerpsi.me/#/tools/kernel-level?id=kernbypass
   notes: iOS 12.0 - 14.2. Exercise caution when using kernel-level bypasses.
@@ -83,6 +87,10 @@ MKTBypass:
 Microsoft Detection Bypass:
   repository:
     uri: https://haoict.github.io/cydia
+
+MyBT Patch:
+  repository:
+    uri: https://ios.jeffsjunk.co.uk
 
 NBKJB:
   repository:
@@ -119,6 +127,10 @@ Shadow:
   guide: https://bypass.beerpsi.me/#/tools/tweaks?id=shadow
   repository:
     uri: https://ios.jjolano.me
+
+SmarTripPatch:
+  repository:
+    uri: https://ios.jeffsjunk.co.uk
 
 SxBypass:
   notes: Only works with Cydia Substrate/Substitute (checkra1n/unc0ver), not libhooker.

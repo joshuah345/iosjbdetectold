@@ -1,0 +1,7 @@
+name: The Star Malaysia
+uri: https://apps.apple.com/my/app/the-star-malaysia/id428184176
+bypasses:
+  - name: Liberty Lite (Beta)
+  - name: Choicy
+  - name: libhooker-configurator
+  - notes: Use Choicy **or** libhooker-configurator to allow injection for only `zzzzzLiberty`

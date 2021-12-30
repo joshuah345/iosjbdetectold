@@ -1,0 +1,4 @@
+name: SmarTrip
+uri: https://apps.apple.com/us/app/smartrip/id1516539463
+bypasses:
+  - name: SmarTripPatch

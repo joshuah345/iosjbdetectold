@@ -39,6 +39,7 @@ def init_db(manifests_dir):
         db_data.append(app)
     return bypasses, db_data
 
+
 class App(Resource):
     def __init__(self):
         self.bypasses, self.db = init_db(os.path.join('..', 'manifests'))
@@ -69,6 +70,8 @@ class App(Resource):
                                             else bypass['notes']
                     else:
                         bypass['notes'] = notes_from_bypass if notes_from_bypass else None
+                    bypass['guide'] = self.bypasses[bypass['name']]['guide'] if 'guide' in self.bypasses[bypass['name']] else None
+
                     detailed_bypass_info.append(bypass)
                 search_results[index]['bypasses'] = detailed_bypass_info
 

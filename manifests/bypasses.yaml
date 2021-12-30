@@ -1,5 +1,5 @@
 A-Bypass:
-  guide: /tools/tweaks?id=a-bypass
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=a-bypass
   repository:
     uri: https://repo.co.kr
 
@@ -17,7 +17,7 @@ ChaseBP:
     uri: https://level3tjg.me/repo
 
 Choicy:
-  guide: /tools/non-bypasses?id=choicy
+  guide: https://bypass.beerpsi.me/#/tools/non-bypasses?id=choicy
   repository:
     uri: https://opa334.github.io
 
@@ -27,12 +27,12 @@ Flex 3 Beta:
     uri: https://getdelta.co
 
 FlyJB X:
-  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=flyjb-amp-flyjb-x
   repository:
     uri: https://repo.xsf1re.kr
 
 FlyJB:
-  guide: /tools/tweaks?id=flyjb-amp-flyjb-x
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=flyjb-amp-flyjb-x
   repository:
     uri: https://repo.xsf1re.kr
 
@@ -48,12 +48,12 @@ Gympass JB Bypass:
     uri: https://sarahh12099.github.io/repo
 
 Hestia:
-  guide: /tools/tweaks?id=hestia
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=hestia
   repository:
     uri: https://repo.packix.com
 
 HideJB:
-  guide: /tools/tweaks?id=shadow
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=shadow
   repository:
     uri: https://apt.thebigboss.org/repofiles/cydia
 
@@ -66,13 +66,13 @@ InteJB:
     uri: https://julioverne.github.io
 
 KernBypass:
-  guide: /tools/kernel-level?id=kernbypass
+  guide: https://bypass.beerpsi.me/#/tools/kernel-level?id=kernbypass
   notes: iOS 12.0 - 14.2. Exercise caution when using kernel-level bypasses.
   repository:
     uri: https://repo.xsf1re.kr
 
 Liberty Lite (Beta):
-  guide: /tools/tweaks?id=liberty-lite-beta
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=liberty-lite-beta
   repository:
     uri: https://ryleyangus.com/repo
 
@@ -116,7 +116,7 @@ S-Bypass:
   notes: Paid bypass with in-app activation. [Direct .deb download link](http://beinapple.me/debs/109.deb).
 
 Shadow:
-  guide: /tools/tweaks?id=shadow
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=shadow
   repository:
     uri: https://ios.jjolano.me
 
@@ -142,12 +142,12 @@ Zoom JB Bypass:
     uri: https://sarahh12099.github.io/repo
 
 libhooker-configurator:
-  guide: /tools/non-bypasses?id=libhooker-configurator
+  guide: https://bypass.beerpsi.me/#/tools/non-bypasses?id=libhooker-configurator
   repository:
     uri: https://repo.theodyssey.dev
 
 vnodebypass:
-  guide: /tools/kernel-level?id=vnodebypass
+  guide: https://bypass.beerpsi.me/#/tools/kernel-level?id=vnodebypass
   notes: Exercise caution when using kernel-level bypasses.
   repository:
     uri: https://cydia.ichitaso.com

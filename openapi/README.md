@@ -1,5 +1,5 @@
 # API
-A simple API intended for looking up bypass + app combinations. It currently has one public endpoint:
+A simple API intended for looking up bypass + app combinations. It currently has two public endpoints:
 
 `GET /app?search=<app name>`: Lookup the app with the keyword `<app name>`  
 **Request:** `/app?search=balls`
@@ -23,6 +23,9 @@ A simple API intended for looking up bypass + app combinations. It currently has
     ]
 }
 ```
+
+`POST /gh-webhook`: As the name implies, this is where the GitHub webhook goes. When there's a push to `main`, the script does a `git pull`, updating information on the repo, then restarts itself.  
+For this endpoint to be available, `GITHUB_WEBHOOK_SECRET` must be an environment variable.
 
 
 # Running the API yourself
@@ -97,4 +100,4 @@ server {
 }
 ```
 
-and that's about it
+and that's about it!

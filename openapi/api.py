@@ -1,13 +1,13 @@
 import os
 import yaml
-import logging
-import argparse
 
 from flask import Flask, request
 from flask_restful import Resource, Api, reqparse
 
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
+
+print(os.environ.keys())
 
 def return_results(list_of_dicts, query, threshold):
     query = query.lower()

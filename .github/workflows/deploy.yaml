@@ -16,12 +16,6 @@ jobs:
         name: Checkout repository
         uses: actions/checkout@v2
       -
-        name: Checkout publishing branch
-        uses: actions/checkout@v2
-        with:
-          ref: docsify
-          path: ./publish
-      -
         name: Setup Python
         uses: actions/setup-python@v2
         with:

@@ -36,11 +36,22 @@ body:
       label: Jailbreak
       description: What jailbreak are you using?
       placeholder: Odyssey
-  - type: textarea
+  - type: checkboxes
     id: bypass_tried
     attributes:
       label: Bypass tried
-      description: Did you try any bypasses? What worked?
+      description: Did you try any bypasses?
+      options:
+        - A-Bypass
+        - Shadow
+        - Liberty Lite (Beta)
+        - vnodebypass
+        - Disabling tweak injection with Choicy or libhooker-configurator
+  - type: textarea
+    id: what_worked
+    attributes:
+      label: Which bypass worked?
+      description: This is also a place to fill in your bypass, if it isn't listed above.
   - type: checkboxes
     id: checklist
     attributes:

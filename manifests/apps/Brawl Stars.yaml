@@ -1,0 +1,5 @@
+name: Brawl Stars
+uri: https://apps.apple.com/us/app/brawl-stars/id1229016807
+bypasses:
+  - name: Choicy
+  - name: libhooker-configurator

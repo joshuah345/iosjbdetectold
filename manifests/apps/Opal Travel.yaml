@@ -1,0 +1,6 @@
+name: Opal Travel
+uri: https://apps.apple.com/us/app/opal-travel/id941006607
+bypasses:
+  - name: A-Bypass
+  - name: Hestia
+  - name: Shadow

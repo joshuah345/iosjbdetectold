@@ -1,0 +1,4 @@
+name: Starbucks
+uri: https://apps.apple.com/us/app/starbucks/id331177714
+bypasses:
+  - name: vnodebypass

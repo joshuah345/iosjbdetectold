@@ -1,3 +1,4 @@
 name: Uber - Driver
 uri: https://apps.apple.com/us/app/uber-driver-drive-deliver/id1131342792
-bypasses: null
+bypasses:
+  - name: vnodebypass

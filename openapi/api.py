@@ -9,6 +9,7 @@ from flask_restful import Resource, Api, reqparse
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
+
 def return_results(list_of_dicts, query, threshold):
     query = query.lower()
     scores = []
@@ -89,8 +90,11 @@ class GitHubWebhook(Resource):
         if hmac.compare_digest(signature, request.headers.get('X-Hub-Signature-256')):
             content = request.json
             if content['ref'] == 'refs/heads/main':
-                os.system('git -C /var/www/jbdetectlist pull')
-                os.system('sudo /bin/systemctl restart jbdetectapi')
+                scriptdir = os.path.dirname(os.path.realpath(__file__))
+                gitdir = os.path.join(__scriptdir, '..') # Assume that the git repo is one directory up
+                systemd_service = 'jbdetectapi'
+                os.system(f'git -C {gitdir} pull')
+                os.system(f'sudo /bin/systemctl restart {systemd_service}')
         else:
             return "Signatures didn't match!", 500
 

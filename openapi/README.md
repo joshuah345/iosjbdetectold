@@ -1,3 +1,5 @@
+Current API: `https://beerpsi.me/api/v1/`
+
 # API
 A simple API intended for looking up bypass + app combinations. It currently has two public endpoints:
 
@@ -24,8 +26,11 @@ A simple API intended for looking up bypass + app combinations. It currently has
 }
 ```
 
-`POST /gh-webhook`: As the name implies, this is where the GitHub webhook goes. When there's a push to `main`, the script does a `git pull`, updating information on the repo, then restarts itself.  
-For this endpoint to be available, `GITHUB_WEBHOOK_SECRET` must be an environment variable.
+`POST /gh-webhook`: 
+**Requires the API to be set up as a systemd service, see below**
+
+As the name implies, this is where the GitHub webhook goes. When an appropriate `POST` request is sent, the database is refreshed.  
+To prevent anyone from willy-nilly sending a POST request and refreshing the database, this endpoint is only active if the environment variable `GITHUB_WEBHOOK_SECRET` is set.
 
 
 # Running the API yourself

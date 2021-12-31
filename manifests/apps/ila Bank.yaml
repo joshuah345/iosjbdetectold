@@ -2,6 +2,5 @@ name: ila Bank
 uri: https://apps.apple.com/bh/app/ila-bank/id1480238512
 bypasses:
   - name: Liberty Lite (Beta)
-  - name: Choicy
   - name: libhooker-configurator
-  - notes: Use Choicy **or** libhooker-configurator to allow injection for only `zzzzzLiberty`
+  - notes: Tested on odysseyra1n, iOS 14.8. Use libhooker-configurator to allow injection for only `zzzzzLiberty`

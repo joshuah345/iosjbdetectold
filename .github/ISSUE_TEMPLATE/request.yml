@@ -40,13 +40,16 @@ body:
     id: bypass_tried
     attributes:
       label: Bypass tried
-      description: Did you try any bypasses?
+      description: Try at least one bypass, your issue won't be considered otherwise.
       options:
-        - A-Bypass
-        - Shadow
-        - Liberty Lite (Beta)
-        - vnodebypass
-        - Disabling tweak injection with Choicy or libhooker-configurator
+        - label: A-Bypass
+        - label: Liberty Lite (Beta)
+        - label: Hestia
+        - label: Shadow
+        - label: HideJB
+        - label: KernBypass
+        - label: vnodebypass
+        - label: Disabling tweak injection with Choicy or libhooker-configurator
   - type: textarea
     id: what_worked
     attributes:
@@ -61,4 +64,6 @@ body:
         - label: The app is missing from the table, or bypasses are not working anymore.
           required: true
         - label: I have checked through all open issues and none matched my app.
+          required: true
+        - label: I have tried at least one bypass before submission.
           required: true

@@ -21,11 +21,11 @@ KernBypass will not work on iOS 14 using unc0ver. Use [vnodebypass](#vnodebypass
 
 !> vnodebypass will disable tweaks globally as well as hide many crucial jailbreak-related files. Make sure to disable vnodebypass once you're finished using the app you're attempting to bypass.
 
-?> Available from [ichitaso's repo.](https://cydia.ichitaso.com/) 
+?> Available from [ichitaso's repo.](https://cydia.ichitaso.com/)
 
 > Users on unc0ver (iOS 14.4+) must also install Siguza's `libkrw` from Elucubratus, else vnodebypass will fail to enable. If enabling still fails, reinstall libkrw.
 
-1. After installation, an app will appear on your homescreen named `vnodebypass`. 
+1. After installation, an app will appear on your homescreen named `vnodebypass`.
 2. Launch it and press the `Enable` button.
 3. When you're done using the app with jailbreak detection, launch the app again and tap `Disable`.
 

@@ -98,7 +98,7 @@ class GitHubWebhook(Resource):
 app = Flask(__name__)
 api = Api(app)
 api.add_resource(App, '/app')
-if 'GITHUB_WEBHOOK_SECRET' in os.environ.keys():
+if 'GITHUB_WEBHOOK_SECRET' in os.environ:
     api.add_resource(GitHubWebhook, '/gh-webhook')
 
 

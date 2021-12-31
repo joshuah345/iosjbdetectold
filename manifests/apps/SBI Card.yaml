@@ -1,0 +1,4 @@
+name: SBI Card
+uri: https://apps.apple.com/in/app/sbi-card/id694549848
+bypasses:
+  - name: vnodebypass

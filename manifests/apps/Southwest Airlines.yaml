@@ -1,0 +1,4 @@
+name: Southwest Airlines
+uri: https://apps.apple.com/us/app/southwest-airlines/id344542975
+bypasses:
+- name: Hestia

@@ -1,0 +1,4 @@
+name: Acuralink
+uri: https://apps.apple.com/us/app/acuralink/id610964308
+bypasses:
+- name: Shadow

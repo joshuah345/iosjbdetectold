@@ -1,0 +1,4 @@
+name: Lakeland Bank
+uri: https://apps.apple.com/us/app/lakeland-bank-mobile-banking/id605536386
+bypasses: 
+ - name: A-Bypass

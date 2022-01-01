@@ -90,10 +90,8 @@ class GitHubWebhook(Resource):
         if hmac.compare_digest(signature, request.headers.get('X-Hub-Signature-256')):
             content = request.json
             if content['ref'] == 'refs/heads/main':
-                __scriptdir = os.path.dirname(os.path.realpath(__file__))
-                gitdir = os.path.join(__scriptdir, '..') # Assume that the git repo is one directory up
                 systemd_service = 'jbdetectapi'
-                os.system(f'git -C {gitdir} pull')
+                os.system(f'git pull')
                 os.system(f'sudo /bin/systemctl restart {systemd_service}')
         else:
             return "Signatures didn't match!", 500

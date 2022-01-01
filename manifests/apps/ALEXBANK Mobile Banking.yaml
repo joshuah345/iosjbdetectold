@@ -1,0 +1,4 @@
+name: ALEXBANK Mobile Banking
+uri: https://apps.apple.com/eg/app/alexbank-mobile-banking/id1246718290
+bypasses:
+- name: vnodebypass

@@ -1,3 +1,4 @@
 name: Marcus
 uri: https://apps.apple.com/us/app/marcus-save-borrow-invest/id1489511701
-bypasses: null
+bypasses: 
+- name: vnodebypass

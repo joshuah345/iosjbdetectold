@@ -12,9 +12,9 @@ from fuzzywuzzy import process
 
 def return_results(list_of_dicts, query, threshold):
     query = query.lower()
-    scores = []
+    scores = list()
     for index, item in enumerate(list_of_dicts):
-        values = [item['name'].lower()]
+        values = [item['name'].lower(), item['bundleId'].lower()]
         ratios = [fuzz.partial_ratio(str(query), str(value)) for value in values] # ensure both are in string
         scores.append({ "index": index, "score": max(ratios)})
 
@@ -90,7 +90,7 @@ class GitHubWebhook(Resource):
         if hmac.compare_digest(signature, request.headers.get('X-Hub-Signature-256')):
             content = request.json
             if content['ref'] == 'refs/heads/main':
-                scriptdir = os.path.dirname(os.path.realpath(__file__))
+                __scriptdir = os.path.dirname(os.path.realpath(__file__))
                 gitdir = os.path.join(__scriptdir, '..') # Assume that the git repo is one directory up
                 systemd_service = 'jbdetectapi'
                 os.system(f'git -C {gitdir} pull')

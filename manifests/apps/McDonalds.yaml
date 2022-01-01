@@ -1,4 +1,6 @@
-name: "McDonald's"
+name: McDonald's
+bundleId: com.mcdonalds.gma
 uri: https://apps.apple.com/us/app/mcdonalds/id922103212
+icon: https://is4-ssl.mzstatic.com/image/thumb/Purple116/v4/ee/92/ca/ee92cab3-aa32-50bc-c155-91df177599e5/source/512x512bb.jpg
 bypasses:
-  - name: Liberty Lite (Beta)
+- name: Liberty Lite (Beta)

@@ -26,7 +26,7 @@ A simple API intended for looking up bypass + app combinations. It currently has
 }
 ```
 
-`POST /gh-webhook`: 
+`POST /gh-webhook`:
 **Requires the API to be set up as a systemd service, see below**
 
 As the name implies, this is where the GitHub webhook goes. When an appropriate `POST` request is sent, the database is refreshed.  
@@ -91,6 +91,12 @@ ExecStart=/var/www/jbdetectlist/env/bin/uwsgi --ini api.ini
 
 [Install]
 WantedBy=multi-user.target
+```
+
+Allow the user running the API to restart the service without a password by creating `/etc/sudoers.d/auto-deploy` (important for auto-deploy):
+```
+Cmnd_Alias MYAPP_CMNDS = /bin/systemctl start jbdetectapi, /bin/systemctl stop jbdetectapi, /bin/systemctl restart jbdetectapi
+www-data ALL=(ALL) NOPASSWD: MYAPP_CMNDS
 ```
 
 Start and enable the service, then configure nginx:

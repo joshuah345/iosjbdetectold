@@ -6,6 +6,35 @@ on:
       - main
 
 jobs:
+  pre-commit-hooks:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      -
+        name: Checkout repository
+        uses: actions/checkout@v2
+      -
+        name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          cache: 'pip'
+      -
+        name: Installing build dependencies
+        run: pip install -r requirements.txt
+      -
+        name: Setup pre-commit
+        run: pre-commit install
+      -
+        name: Run pre-commit hooks
+        run: pre-commit run -a
+      -
+        name: Push changed files
+        uses: EndBug/add-and-commit@v7
+        if: always()
+        with:
+          message: 'Fix files that failed pre-commit checks'
+          signoff: true
   deploy:
     if: "!contains(github.event.head_commit.message, 'skip-ci')"
     runs-on: ubuntu-latest

@@ -1,5 +1,8 @@
 name: Barclaycard For Business
+bundleId: com.barclays.barclaycardforbusiness
 uri: https://apps.apple.com/us/app/barclaycard-for-business/id1538982647
+icon: https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/62/44/55/6244557f-f6e1-996c-6e55-f6811c35995c/source/512x512bb.jpg
 bypasses:
 - name: Hestia
-- notes: Compatibility Mode <strong>must</strong> be <strong>enabled</strong> for Hestia to work.
+  notes: Compatibility Mode <strong>must</strong> be <strong>enabled</strong> for
+    Hestia to work.

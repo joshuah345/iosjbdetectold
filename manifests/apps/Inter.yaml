@@ -2,4 +2,4 @@ name: Inter
 uri: https://apps.apple.com/us/app/inter-abrir-conta-digital/id839711154
 bypasses: 
 - name: Hestia
-- notes: Compatibility Mode <strong>must</strong> be <strong>disabled</strong> for Hestia to work.
+  notes: Compatibility Mode <strong>must</strong> be <strong>disabled</strong> for Hestia to work.

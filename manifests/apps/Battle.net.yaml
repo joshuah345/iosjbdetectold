@@ -3,4 +3,4 @@ uri: https://apps.apple.com/us/app/battle-net/id1241040030
 bypasses: 
  - name: Choicy
  - name: libhooker-configurator
- - notes: Battle.net does not have jailbreak detection, but a tweak may cause the app to crash.
+ notes: Battle.net does not have jailbreak detection, but a tweak may cause the app to crash.

@@ -1,3 +1,4 @@
 name: PlayStation App
 uri: https://apps.apple.com/us/app/playstation-app/id410896080
 bypasses: null
+- notes: App does not appear to have jailbreak detection.

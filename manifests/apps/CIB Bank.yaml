@@ -2,3 +2,4 @@ name: CIB Bank
 uri: https://apps.apple.com/us/app/cib-bank/id1069396158
 bypasses:
   - name: Liberty Lite (Beta)
+  - name: A-Bypass

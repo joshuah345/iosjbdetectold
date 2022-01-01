@@ -1,11 +1,13 @@
 repos:
 - repo: https://github.com/beerpiss/pre-commit-hooks
-  rev: master  # Use the ref you want to point at
+  rev: v4.1.0-1-beerpiss # Use the ref you want to point at
   hooks:
   - id: trailing-whitespace
     args: [--markdown-linebreak-ext=md]
   - id: check-yaml
   - id: sort-simple-yaml
     files: ^manifests/
+  - id: add-bundleid-and-icon
+    files: ^manifests/apps/
   - id: mixed-line-ending
     args: [--fix=lf]

@@ -81,12 +81,6 @@ Liberty Lite (Beta):
   repository:
     uri: https://ryleyangus.com/repo
 
-iHide:
-  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=liberty-lite-beta
-  repository:
-    uri: https://repo.kc57.com/
-
-
 MKTBypass:
   repository:
     uri: https://ramen2x.github.io
@@ -159,6 +153,11 @@ WFDBP:
 Zoom JB Bypass:
   repository:
     uri: https://sarahh12099.github.io/repo
+
+iHide:
+  guide: https://bypass.beerpsi.me/#/tools/tweaks?id=liberty-lite-beta
+  repository:
+    uri: https://repo.kc57.com/
 
 libhooker-configurator:
   guide: https://bypass.beerpsi.me/#/tools/non-bypasses?id=libhooker-configurator

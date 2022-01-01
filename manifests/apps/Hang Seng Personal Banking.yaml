@@ -5,4 +5,4 @@ icon: https://is2-ssl.mzstatic.com/image/thumb/Purple126/v4/03/bd/37/03bd37af-cf
 bypasses:
 - name: Liberty Lite (Beta)
   version: '5.0'
-- notes: Requires further workarounds noted [here](/special-workarounds.md?id=hang-seng-personal-banking)
+- notes: Requires further workarounds noted [here](https://bypass.beerpsi.me/#/special-workarounds.md?id=hang-seng-personal-banking)

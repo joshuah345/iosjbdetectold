@@ -24,7 +24,7 @@ for app_file in apps_files:
     if 'bundleId' in app and 'icon' in app:
         continue
 
-    with open(app_file, encoding='utf-8', mode='w') as file:
+    with open(app_file, encoding='utf-8', mode='w', newline='\n') as file:
         r = requests.get(get_lookup_url(app['uri'])).json()
         app_new = dict()
         app_new['name'] = app['name']

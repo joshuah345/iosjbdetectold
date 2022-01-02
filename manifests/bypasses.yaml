@@ -81,7 +81,7 @@ KernBypass:
 
 Liberty Lite (Beta):
   guide: https://bypass.beerpsi.me/#/tools/tweaks?id=liberty-lite-beta
-  notes: It seems like Liberty Lite (Beta) doesn't work well on Substitute jailbreaks (unc0ver/checkra1n) on iOS 14.
+  notes: It seems like Liberty Lite (Beta) doesn't work well on non-libhooker jailbreaks (unc0ver/checkra1n) on iOS 14.
   repository:
     uri: https://ryleyangus.com/repo
 

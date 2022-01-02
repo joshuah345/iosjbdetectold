@@ -1,6 +1,7 @@
-name: McDonald's
-bundleId: com.mcdonalds.gma
-uri: https://apps.apple.com/us/app/mcdonalds/id922103212
-icon: https://is4-ssl.mzstatic.com/image/thumb/Purple116/v4/ee/92/ca/ee92cab3-aa32-50bc-c155-91df177599e5/source/512x512bb.jpg
+name: McDonald's (Global)
+bundleId: com.mcdonalds.mobileapp
+uri: https://apps.apple.com/gb/app/mcdonalds/id1217507712
+icon: https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d5/18/e2/d518e20b-3434-0a18-a89f-c03563d97f92/source/512x512bb.jpg
 bypasses:
 - name: Liberty Lite (Beta)
+- name: Hestia

@@ -5,5 +5,5 @@ icon: https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/85/b4/58/85b4580a-04
 bypasses:
 - name: A-Bypass
 - name: Shadow
+  notes: Shadow's `Lockdown Mode` must be enabled for this app.
 - name: iHide
-- notes: Shadow's `Lockdown Mode` must be enabled for this app.

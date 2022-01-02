@@ -44,6 +44,15 @@ These tools attempt to circumvent detection methods.
 4. Tap on `Block Jailbreak Detection`
 5. Enable the app(s) with jailbreak detecion.
 
+<<<<<<< HEAD
+=======
+## iHide
+
+?> Available from [Kc57's Repo.](https://sharerepo.stkc.win/?repo=https://repo.kc57.com/)
+
+iHide is very similar to Liberty Lite, but it may have varying results depending on the app. The steps are essentially the same as Liberty's.
+
+>>>>>>> 2281f90 (use stkc.win for ihide repo)
 ## Shadow
 
 ?> Available from [jjolano's repo](https://sharerepo.stkc.win/?repo=https://ios.jjolano.me)

@@ -32,6 +32,8 @@ These tools attempt to circumvent detection methods.
 
 ## Liberty Lite (Beta)
 
+!> Liberty Lite (Beta) seems broken on non-libhooker jailbreaks (checkra1n/unc0ver).
+
 ?> Available from [Ryley Angus' repo](https://sharerepo.stkc.win/?repo=https://ryleyangus.com/repo)
 
 > Tweak name in [Choicy](/tools/non-bypasses?id=choicy) or [libhooker-configurator](/tools/non-bypasses?id=libhooker-configurator): `zzzzzLiberty`

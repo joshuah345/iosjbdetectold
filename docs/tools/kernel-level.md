@@ -16,7 +16,6 @@ KernBypass will not work on iOS 14 using unc0ver. Use [vnodebypass](#vnodebypass
 3. Tap `Enable KernBypass`
 4. Enable all the apps you want to block jailbreak detection for.
 
-
 ## vnodebypass
 
 !> vnodebypass will disable tweaks globally as well as hide many crucial jailbreak-related files. Make sure to disable vnodebypass once you're finished using the app you're attempting to bypass.
@@ -28,4 +27,3 @@ KernBypass will not work on iOS 14 using unc0ver. Use [vnodebypass](#vnodebypass
 1. After installation, an app will appear on your homescreen named `vnodebypass`.
 2. Launch it and press the `Enable` button.
 3. When you're done using the app with jailbreak detection, launch the app again and tap `Disable`.
-

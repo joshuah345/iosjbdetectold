@@ -44,6 +44,12 @@ These tools attempt to circumvent detection methods.
 4. Tap on `Block Jailbreak Detection`
 5. Enable the app(s) with jailbreak detecion.
 
+## iHide
+
+?> Available from [Kc57's Repo.](https://repo.kc57.com/)
+
+iHide is very similar to Liberty Lite, but it may have varying results depending on the app. The steps are essentially the same as Liberty's.
+
 ## Shadow
 
 ?> Available from [jjolano's repo](https://sharerepo.stkc.win/?repo=https://ios.jjolano.me)
@@ -51,7 +57,6 @@ These tools attempt to circumvent detection methods.
 > HideJB is a fork of jjolano's Shadow, which is why it doesn't have its own entry.
 
 > Preferences for Shadow are a somewhat more complex compared to other bypass tweaks. Some applications may require advanced configuration for them to function. The recommended settings are listed below.
-
 
 1. Launch Settings
 2. Scroll down and select Shadow

@@ -77,6 +77,9 @@ class App(Resource):
                             bypass['repository'] = self.bypasses[bypass['name']]['repository'] \
                                                 if 'repository' in self.bypasses[bypass['name']] \
                                                 else None
+                            bypass['repository']['uri'] = f"https://sharerepo.stkc.win/?repo={self.bypasses[bypass['name']]['repository']['uri']}" \
+                                                if 'repository' in self.bypasses[bypass['name']] \
+                                                else None
                             if not downgrade_noted and 'version' in bypass and bypass['name'] != "AppStore++":
                                 bypass_notes.append(
                                     f"Use AppStore++ ({markdown_link('repo', self.bypasses['AppStore++']['repository']['uri'], sharerepo=True)}) to downgrade.")
@@ -92,6 +95,7 @@ class App(Resource):
                                 bypass_notes.append(' '.join(filter(None, [notes_from_bypass, notes_from_manifest])))
                             if bypass_notes:
                                 bypass['notes'] = '\n'.join(bypass_notes)
+
                         detailed_bypass_info.append(bypass)
                     search_results[index]['bypasses'] = detailed_bypass_info
 

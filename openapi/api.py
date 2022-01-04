@@ -60,7 +60,7 @@ class App(Resource):
         if args.search is None:
             return {'status': 'Successful', 'data': self.apps}
         else:
-            search_results = return_results(self.db, args.search, 78)
+            search_results = return_results(self.db, args.search, 90)
 
             for index, res in enumerate(search_results):
                 if res['bypasses']:

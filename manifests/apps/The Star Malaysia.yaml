@@ -5,5 +5,3 @@ icon: https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/40/4c/62/404c6292-97
 bypasses:
 - name: Liberty Lite (Beta)
   notes: Use Choicy **or** libhooker-configurator to allow injection for only `zzzzzLiberty`
-- name: Choicy
-- name: libhooker-configurator

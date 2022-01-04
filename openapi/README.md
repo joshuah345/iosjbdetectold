@@ -3,6 +3,27 @@ Current API: `https://beerpsi.me/api/v1/`
 # API
 A simple API intended for looking up bypass + app combinations. It currently has two public endpoints:
 
+`GET /app`: List all apps known to have jailbreak detection
+```json
+{
+    "status": "Successful",
+    "data": [
+        "8 Ball Pool",
+        "AASTOCKS M+ Mobile",
+        "Abamobi com",
+        "ABC News",
+        "Absher",
+        "Acuralink",
+        "ADIB Mobile Banking App",
+        "AFL Live Official App",
+        "AIB Mobile",
+        "ALEXBANK Mobile Banking",
+        "ALHOSN UAE",
+        "Alipay"
+    ]
+}
+```
+
 `GET /app?search=<app name>`: Lookup the app with the keyword `<app name>`  
 **Request:** `/app?search=balls`
 ```json

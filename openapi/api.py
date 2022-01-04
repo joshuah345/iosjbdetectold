@@ -39,6 +39,7 @@ def init_db(manifests_dir):
             app = yaml.safe_load(file.read())
         db_data.append(app)
     apps = [x['name'] for x in db_data]
+    apps.sort(key=lambda a: a.lower())
     return bypasses, apps, db_data
 
 

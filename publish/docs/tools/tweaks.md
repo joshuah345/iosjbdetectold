@@ -32,7 +32,7 @@ These tools attempt to circumvent detection methods.
 
 ## Liberty Lite (Beta)
 
-!> Liberty Lite (Beta) seems broken on non-libhooker jailbreaks (checkra1n/unc0ver).
+!> Liberty Lite (Beta) seems broken on non-libhooker jailbreaks (checkra1n/unc0ver).  
 
 ?> Available from [Ryley Angus' repo](https://sharerepo.stkc.win/?repo=https://ryleyangus.com/repo)
 

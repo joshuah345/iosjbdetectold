@@ -38,47 +38,67 @@ def init_db(manifests_dir):
         with open(app_file, encoding='utf-8') as file:
             app = yaml.safe_load(file.read())
         db_data.append(app)
-    return bypasses, db_data
+    apps = [x['name'] for x in db_data]
+    return bypasses, apps, db_data
 
+
+def markdown_link(name, uri, sharerepo=False):
+    sharerepo_site = "https://sharerepo.stkc.win/?repo="
+    return f"[{name}]({sharerepo_site}{uri})" if sharerepo else f"[{name}]({uri})"
 
 class App(Resource):
     def __init__(self):
-        self.bypasses, self.db = init_db(os.path.join('..', 'manifests'))
+        self.bypasses, self.apps, self.db = init_db(os.path.join('..', 'manifests'))
 
     def get(self):
         parser = reqparse.RequestParser()
-        parser.add_argument('search', required=True)
+        parser.add_argument('search', required=False)
         parser.add_argument('fields', required=False)
 
         args = parser.parse_args()
-        search_results = return_results(self.db, args.search, 78)
-
-        for index, res in enumerate(search_results):
-            if res['bypasses']:
-                detailed_bypass_info = list()
-                downgrade_noted = False
-                for bypass in res['bypasses']:
-                    if 'name' in bypass:
-                        notes_from_bypass = self.bypasses[bypass['name']]['notes'] \
-                                            if 'notes' in self.bypasses[bypass['name']] \
-                                            else None
-                        if 'guide' in self.bypasses[bypass['name']]:
-                            bypass['guide'] = self.bypasses[bypass['name']]['guide']
-
-                        bypass['repository'] = self.bypasses[bypass['name']]['repository'] \
-                                            if 'repository' in self.bypasses[bypass['name']] \
-                                            else None
-                        if 'notes' in bypass and notes_from_bypass:
-                            bypass['notes'] = [notes_from_bypass, bypass['notes']]
-                        elif notes_from_bypass:
-                            bypass['notes'] = notes_from_bypass
-                    detailed_bypass_info.append(bypass)
-                search_results[index]['bypasses'] = detailed_bypass_info
-
-        if search_results:
-            return {'status': 'Successful', 'data': search_results}
+        if args.search is None:
+            return {'status': 'Successful', 'data': self.apps}
         else:
-            return {'status': 'Not Found'}
+            search_results = return_results(self.db, args.search, 78)
+
+            for index, res in enumerate(search_results):
+                if res['bypasses']:
+                    bypass_notes = list()
+                    detailed_bypass_info = list()
+                    downgrade_noted = False
+                    for bypass in res['bypasses']:
+                        if 'name' in bypass:
+                            notes_from_bypass = self.bypasses[bypass['name']]['notes'] \
+                                                if 'notes' in self.bypasses[bypass['name']] \
+                                                else None
+                            if 'guide' in self.bypasses[bypass['name']]:
+                                bypass['guide'] = self.bypasses[bypass['name']]['guide']
+
+                            bypass['repository'] = self.bypasses[bypass['name']]['repository'] \
+                                                if 'repository' in self.bypasses[bypass['name']] \
+                                                else None
+                            if not downgrade_noted and 'version' in bypass and bypass['name'] != "AppStore++":
+                                bypass_notes.append(
+                                    f"Use AppStore++ ({markdown_link('repo', self.bypasses['AppStore++']['repository']['uri'], sharerepo=True)}) to downgrade.")
+                                downgrade_noted = True
+
+                            notes_from_bypass = f"{self.bypasses[bypass['name']]['notes']}" \
+                                                    if 'notes' in self.bypasses[bypass['name']] \
+                                                    else None
+                            notes_from_manifest = bypass['notes'] \
+                                                    if 'notes' in bypass \
+                                                    else None
+                            if notes_from_bypass or notes_from_manifest:
+                                bypass_notes.append(' '.join(filter(None, [notes_from_bypass, notes_from_manifest])))
+                            if bypass_notes:
+                                bypass['notes'] = '\n'.join(bypass_notes)
+                        detailed_bypass_info.append(bypass)
+                    search_results[index]['bypasses'] = detailed_bypass_info
+
+            if search_results:
+                return {'status': 'Successful', 'data': search_results}
+            else:
+                return {'status': 'Not Found'}
 
 
 class GitHubWebhook(Resource):
@@ -105,7 +125,7 @@ if 'GITHUB_WEBHOOK_SECRET' in os.environ:
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
 
 

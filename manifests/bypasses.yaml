@@ -1,3 +1,6 @@
+#S-Bypass:
+#  notes: Paid bypass with in-app activation. [Direct .deb download link](http://beinapple.me/debs/109.deb).
+
 A-Bypass:
   guide: https://bypass.beerpsi.me/#/tools/tweaks?id=a-bypass
   repository:
@@ -123,9 +126,6 @@ PicJB:
 RDR2Patch:
   repository:
     uri: https://ryleyangus.com/repo
-
-S-Bypass:
-  notes: Paid bypass with in-app activation. [Direct .deb download link](http://beinapple.me/debs/109.deb).
 
 Shadow:
   guide: https://bypass.beerpsi.me/#/tools/tweaks?id=shadow

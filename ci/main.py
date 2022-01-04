@@ -70,10 +70,10 @@ def main():
                     if notes_from_bypass or notes_from_manifest:
                         bypass_notes.append(f"- **{bypass['name']}**: " + notes_from_bypass + notes_from_manifest)
                 elif 'notes' in bypass:
-                    logger.warning('Bypass name not specified, printing notes only')
+                    logger.warning(f'{app_file} - Bypass name not specified, printing notes only')
                     bypass_notes.append(f"- {bypass['notes']}")
                 else:
-                    logger.error('Neither name nor notes were supplied for this bypass!')
+                    logger.error(f'{app_file} - Neither name nor notes were supplied for this bypass!')
                     continue
         table_matrix.append([f"{app_name}", '<br>'.join(bypass_versions),
                              '<br>'.join(bypass_tweaks), '<br>'.join(bypass_notes)])

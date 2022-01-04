@@ -35,7 +35,7 @@ def init_db(manifests_dir):
         bypasses = yaml.safe_load(file)
 
     db_data = list()
-    apps_files = [os.path.join(apps_dir, f) for f in os.listdir(apps_dir) if os.path.isfile(os.path.join(apps_dir, f))]
+    apps_files = [os.path.join(apps_dir, f) for f in os.listdir(apps_dir) if os.path.isfile(os.path.join(apps_dir, f)) and os.path.splitext(f)[-1].lower() == '.yaml']
     for app_file in apps_files:
         with open(app_file, encoding='utf-8') as file:
             app = yaml.safe_load(file.read())

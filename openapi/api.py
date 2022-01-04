@@ -20,6 +20,8 @@ def return_results(list_of_dicts, query, threshold):
 
     filtered_scores = [item for item in scores if item['score'] >= threshold]
     sorted_filtered_scores = sorted(filtered_scores, key = lambda k: k['score'], reverse=True)
+    if sorted_filtered_scores[0]['score'] == 100:
+        return [list_of_dicts[sorted_filtered_scores[0]['index']]]
     filtered_list_of_dicts = [ list_of_dicts[item["index"]] for item in sorted_filtered_scores ]
     return filtered_list_of_dicts
 

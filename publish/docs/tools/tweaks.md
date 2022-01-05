@@ -4,6 +4,8 @@ These tools attempt to circumvent detection methods.
 
 !> Do not attempt to use multiple bypasses at once. It will result in conflicts and apps are very likely to crash if you do.
 
+?> libhooker (Taurine, Odyssey, etc.) users: Bypasses seem to crash apps on libhooker 1.6.3 (latest stable version). Try updating to libhooker 1.6.9b2 from [libhooker beta repo](https://sharerepo.stkc.win/?repo=https://repo.theodyssey.dev/libhooker-beta) if this is the case for you.
+
 ?> For further support in English, ask for help in the [r/Jailbreak Discord server](https://discord.gg/jb).
 
 ## A-Bypass

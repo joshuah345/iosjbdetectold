@@ -5,4 +5,5 @@ icon: https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/e1/c3/fe/e1c3fe7c-08
 bypasses:
 - name: Hestia
   notes: Disable `Compatibility Mode` and dlopen patches, or else app will crash.
+- name: Shadow
 - name: Liberty Lite (Beta)

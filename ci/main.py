@@ -45,7 +45,7 @@ def main():
             bypass_notes.append('')
         else:
             for bypass in app['bypasses']:
-                bypass_versions.append(f"{bypass['version']}" if 'version' in bypass else '')
+                bypass_versions.append(str(bypass['version']) if 'version' in bypass else None)
 
                 if 'name' in bypass:
                     bypass_tweak = f"{markdown_link(bypass['name'], bypasses[bypass['name']]['guide'])}" \
@@ -75,7 +75,7 @@ def main():
                 else:
                     logger.error(f'{app_file} - Neither name nor notes were supplied for this bypass!')
                     continue
-        table_matrix.append([f"{app_name}", '<br>'.join(bypass_versions),
+        table_matrix.append([f"{app_name}", '<br>'.join(filter(None,bypass_versions)),
                              '<br>'.join(bypass_tweaks), '<br>'.join(bypass_notes)])
 
     table_matrix.sort(key=lambda a: a[0].lower())

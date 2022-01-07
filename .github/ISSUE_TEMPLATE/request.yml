@@ -47,6 +47,7 @@ body:
         - label: Hestia
         - label: Shadow
         - label: HideJB
+        - label: iHide
         - label: KernBypass (iOS 12.0 - 14.2)
         - label: vnodebypass
         - label: Disabling tweak injection with Choicy or libhooker-configurator
